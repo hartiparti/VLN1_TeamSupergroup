@@ -1,40 +1,55 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+
+const int Max_Lines = 10;
+
 using namespace std;
-const char max_size = 10;
 
 int main()
 {
+    string read_10_lines;
     char choice;
-    string str;
+
     ifstream fin;
-    fin.open("Textfile.txt");
+    fin.open("textFile.txt");
 
-    do {
-        if (fin.is_open())
-        {
-            for(int i = 0; i < max_size; i++){
-                getline(fin, str);
-                cout << str << endl;
-                cin >> choice;
+    do{
+        if (fin.eof()){                                     /// If setning sem tjekkar hvort vid erum kominn i botn a skjalinu, ef svo tha brjota loopu.
+            cout << "End of document";
+            cout << endl;
+            break;
+        }
+
+        if(fin.is_open()){                                         /// "Opna skjalid og itra med for-loopu til thess ad fa 10 linur
+            for(int i = 0; i < Max_Lines; i++){
+                cout << "Line nr: " << i + 1 << " ";        /// Til thess ad sja hvada linu vid erum ad prenta
+                getline(fin, read_10_lines);
+                cout << read_10_lines << " " << endl;
+                cout << endl;
                 }
-
-                    if ((choice == 'n')||(choice = 'N'))
-                    {
-                    return 0;
-                    }
-                    cout << endl;
-                    cout << "Continue? y/n" << endl;
         }
-        /*
+            cout << endl;
+            cout << "Do you want to continue y/n? ";                /// Y og hvada char sem er, fyrir utan "n" heldur afram thar til skjalid endar.
 
-        */
+        do{
+            cin >> choice;
+            if((choice == 'n') || (choice == 'N')){
+                cout << endl;
+                cout << "Exiting program";
+                return 0;
+            }
+            else{
+                break;
+            }
+        }while(choice != 'y');
 
-        }
-        while ((choice != 'y') && (choice != 'Y'));
+    }while(choice != 'n');
 
-        fin.close();
+    fin.close();
+
 
     return 0;
+
 }
+
