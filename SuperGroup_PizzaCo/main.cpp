@@ -33,11 +33,122 @@
 */
 
 
+
+
+
+
 using namespace std;
+const int Pick_order = 1;
+const int Pick_pickup = 2;
+const int Pick_sales = 3;
+
+void Interface(){
+
+
+    cout << "............Welcome to..............." << endl;
+    cout <<"     |A w e S o m e P i Z z A|     " << endl;
+    cout << "   ****************************   " << endl;
+    cout << "    Sales managementForce 1.0    " << endl;
+    cout << "   ****************************   " << endl;
+    cout << "       1:  Order                  " << endl;
+    cout << "       2:  Pick up                 " << endl;
+    cout << "       3:  Sales & current orders   "  << endl;
+    cout << "   ........................... " << endl;
+
+
+}
+
+void PickUp(){
+
+
+    cout << "............Welcome to..............." << endl;
+    cout <<"     |A w e S o m e P i Z z A|     " << endl;
+    cout << "   ****************************   " << endl;
+    cout << "    Sales managementForce 1.0    " << endl;
+    cout << "   ****************************   " << endl;
+    cout << "  Nr. " << " Name "  << " Status " << endl;
+    cout << "  169 " << " John Johnsson" << " Done " << endl;
+    cout << "  154 " << " David Davidson " << " Wating " << endl;
+    cout << "  121 " << " Mike M. John" << " Waiting " << endl;
+    cout << "  111 " << " Jane Joe " << " Preparing " << endl;
+    cout << "  ............................. " << endl;
+    cout << "      1:Up   2:Down   3:Back  "  << endl;
+    cout << "  ............................ " << endl;
+
+
+}
+
+void PickUp2(){
+
+
+    cout << "............Welcome to..............." << endl;
+    cout <<"     |A w e S o m e P i Z z A|     " << endl;
+    cout << "   ****************************   " << endl;
+    cout << "    Sales managementForce 1.0    " << endl;
+    cout << "   ****************************   " << endl;
+    cout << "  Nr. " << " Name "  << " Status " << endl;
+    cout << "  169 " << " John Johnsson" << " Done " << endl;
+    cout << "  154 " << " David Davidson " << " Wating " << endl;
+    cout << "  121 " << " Mike M. John" << " Waiting " << endl;
+    cout << "  ............................. " << endl;
+    cout << "      1:Up   2:Down   3:Back  "  << endl;
+    cout << "  ............................ " << endl;
+
+
+}
 
 int main()
 {
-    cout << "Hello world!" << endl;
+
+    Interface();
+
+    int input;
+    do {
+
+
+    cin >> input;// Console IN some data
+        if (input == 1)
+        {
+            input = Pick_order;
+        }
+        else if (input == 2)
+        {
+        input = Pick_pickup;
+
+
+        }
+        else if (input == 3)
+        {
+        input = Pick_sales;
+         PickUp();
+            cin >> input;
+            if (input = 3)
+            {
+                break;
+            }
+            else
+            {
+                PickUp2();
+
+            }
+
+        }
+        else {
+
+        }
+        cout << "You entered " << input << endl;
+     cin.get ();
+    }
+    while (input !=0);
+
+
+
+
+
+
+
+
+
     return 0;
 }
 

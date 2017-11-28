@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1511875540 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\verkefni1_a(2)\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+

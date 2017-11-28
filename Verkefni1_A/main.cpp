@@ -26,10 +26,10 @@ int main()
                 cout << "Line nr: " << i + 1 << " ";        /// Til thess ad sja hvada linu vid erum ad prenta
                 getline(fin, read_10_lines);
                 cout << read_10_lines << " " << endl;
-                cout << endl;
+
                 }
         }
-            cout << endl;
+
             cout << "Do you want to continue y/n? ";                /// Y og hvada char sem er, fyrir utan "n" heldur afram thar til skjalid endar.
 
         do{

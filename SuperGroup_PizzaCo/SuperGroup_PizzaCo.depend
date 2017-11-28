@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1511806222 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\src\bake.cpp
+	"Bake.h"
+
+1511806684 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\include\bake.h
+
+1511806148 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\src\control.cpp
+	"Control.h"
+
+1511806201 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\include\control.h
+
+1511806281 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\src\deliver.cpp
+	"Deliver.h"
+
+1511806687 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\include\deliver.h
+
+1511805964 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\src\sales.cpp
+	"Sales.h"
+
+1511806689 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\include\sales.h
+
+1511812855 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\main.cpp
+	<iostream>
+
