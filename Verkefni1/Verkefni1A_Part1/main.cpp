@@ -9,6 +9,7 @@ int main()
 {
     string read_line;
     char choice;
+    int counter = 0;
 
     ifstream fin;
     fin.open("textFile.txt");
@@ -23,7 +24,8 @@ int main()
                 if (fin.eof()){
                 break;
                 }
-            cout << "Line nr: " << i + 1 << " :";
+                counter++;
+            cout << "Line nr: " << counter << " :";
             cout << read_line << " " << endl;
             }
             cout << "--------------------------------" << endl;
@@ -34,15 +36,9 @@ int main()
                 break;
                 }
             }
-
-
-
         }while((choice != 'y') || (choice != 'n'));
 
             cout << "End of file, exiting";
     fin.close();
-
-
     return 0;
-
 }
