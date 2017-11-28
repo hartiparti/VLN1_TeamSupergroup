@@ -23,6 +23,7 @@ int main()
                 if (fin.eof()){
                 break;
                 }
+            cout << "Line nr: " << i + 1 << " :";
             cout << read_line << " " << endl;
             }
             cout << "--------------------------------" << endl;
