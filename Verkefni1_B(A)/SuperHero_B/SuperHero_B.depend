@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1511883533 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\verkefni1_b(a)\superhero_b\main.cpp
+	<fstream>
+	<string>
+	<iostream>
+	<string>
+
