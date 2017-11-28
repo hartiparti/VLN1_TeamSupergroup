@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1511882853 source:c:\users\filippus\desktop\Þriggja vikna\llítið a iii superhero\main.cpp
+	<iostream>
+	"SuperHero.h"
+	<fstream>
+
+1511879317 c:\users\filippus\desktop\Þriggja vikna\llítið a iii superhero\include\superhero.h
+	<iostream>
+	<string>
+
+1511878771 source:c:\users\filippus\desktop\Þriggja vikna\llítið a iii superhero\src\superhero.cpp
+	"SuperHero.h"
+
