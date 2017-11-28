@@ -11,7 +11,6 @@ Leiðbeinandi
 Egill Anton Hlöðversson
 
 --------------------------
-	Status:
+	Status: Verkefni 1 = Done
+		Main = ?
 --------------------------
-Verkefni 1 = Done
-Main = ?
