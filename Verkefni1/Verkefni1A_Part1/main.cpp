@@ -2,9 +2,7 @@
 #include <fstream>
 #include <string>
 
-//fafafafaf
-
-
+const int size_of_output = 10;
 using namespace std;
 
 int main()
@@ -14,43 +12,36 @@ int main()
 
     ifstream fin;
     fin.open("textFile.txt");
-
     do{
-        if (fin.eof()){
-            cout << "End of document";
-            cout << endl;
-            break;
-        }
-
-        if(fin.is_open()){
-            for(int i = 0; i < sizeof(read_line); i++){
-                getline(fin, read_line);
-                cout << read_line << " " << endl;
-
-                }
-        }
-
-            cout << "Do you want to continue y/n? ";
-
-
-        do{
-            cin >> choice;
-            if((choice == 'n') || (choice == 'N')){
-                cout << endl;
+        if((choice == 'n') || (choice == 'N')){
                 cout << "Exiting program";
                 return 0;
             }
-            else{
+        if(fin.is_open()){
+        for(int i = 0; i < size_of_output; i++){
+            getline(fin, read_line);
+                if (fin.eof()){
                 break;
+                }
+            cout << read_line << " " << endl;
             }
-        }while(choice != 'y');
+            cout << "--------------------------------" << endl;
+            cout << "Do you want to continue y/n? ";
+            cout << endl;
+            cin >> choice;
+             if (fin.eof()){
+                break;
+                }
+            }
 
-    }while(choice != 'n');
 
+
+        }while((choice != 'y') || (choice != 'n'));
+
+            cout << "End of file, exiting";
     fin.close();
 
 
     return 0;
 
 }
-
