@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 
+
 const int size_of_output = 10;
 using namespace std;
 
