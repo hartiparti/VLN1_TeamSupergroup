@@ -16,6 +16,9 @@
 					<Add directory="include" />
 					<Add directory="Controler" />
 					<Add directory="C:/Users/Hartiparti/Desktop/3Vikna/VLN1_TeamSupergroup/SuperGroup_PizzaCo/include" />
+					<Add directory="View" />
+					<Add directory="Models" />
+					<Add directory="Controlers" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -28,6 +31,9 @@
 					<Add directory="include" />
 					<Add directory="Controler" />
 					<Add directory="C:/Users/Hartiparti/Desktop/3Vikna/VLN1_TeamSupergroup/SuperGroup_PizzaCo/include" />
+					<Add directory="View" />
+					<Add directory="Models" />
+					<Add directory="Controlers" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -38,8 +44,19 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Controlers/ControlerPizza.cpp" />
+		<Unit filename="Controlers/ControlerPizza.h" />
 		<Unit filename="Controlers/Controlers.cpp" />
 		<Unit filename="Controlers/Controlers.h" />
+		<Unit filename="Models/Pizza.cpp" />
+		<Unit filename="Models/Pizza.h" />
+		<Unit filename="Models/Topping.cpp" />
+		<Unit filename="Models/Topping.h" />
+		<Unit filename="View/Main_interface.cpp" />
+		<Unit filename="View/Main_interface.h" />
+		<Unit filename="View/Pizza_UI.cpp" />
+		<Unit filename="View/Pizza_UI.h" />
+		<Unit filename="View/View.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

@@ -32,3 +32,126 @@
 
 1511968242 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\order.h
 
+1511968134 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\pizza.cpp
+	"Pizza.h"
+
+1511970501 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\pizza.h
+	"Toppings.h"
+
+1511970377 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\toppings.cpp
+
+1511970406 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\toppings.h
+
+1511970837 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\view.cpp
+	"View.h"
+
+1511970837 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\view.h
+
+1511970297 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\models_pizza.cpp
+	"Models_Pizza.h"
+
+1511970296 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\models_pizza.h
+
+1511970494 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\models_topping.cpp
+	"Models_Topping.h"
+	<string.h>
+
+1511970487 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\models_topping.h
+
+1511970601 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\view_main_ui.cpp
+	"View_Main_ui.h"
+
+1511970601 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\view_main_ui.h
+
+1511970856 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\models.cpp
+	"Models.h"
+
+1511970856 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\models.h
+
+1511966605 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\controlers\controlers.cpp
+	"Controlers.h"
+
+1511966605 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\controlers\controlers.h
+
+1511970856 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\models\models.cpp
+	"Models.h"
+
+1511970856 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\models\models.h
+
+1511973485 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\main.cpp
+	<iostream>
+	"Main_interface.h"
+
+1511973204 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\models\pizza.cpp
+	"Pizza.h"
+
+1511973971 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\models\pizza.h
+	"Topping.h"
+
+1511973315 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\view\main_interface.h
+	<iostream>
+	"Main_interface.h"
+
+1511973904 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\models\topping.cpp
+	"Topping.h"
+	<string.h>
+
+1511973868 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\models\topping.h
+
+1511973485 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\backup - git\supergroup_pizzaco\view\main_interface.cpp
+	"Main_interface.h"
+
+1511966605 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\controlers\controlers.cpp
+	"Controlers.h"
+
+1511966605 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\controlers\controlers.h
+
+1511988882 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\models\pizza.cpp
+	"Pizza.h"
+	"Main_interface.h"
+	"Pizza_UI.h"
+	"Topping.h"
+
+1511987083 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\models\pizza.h
+	"Topping.h"
+	<iostream>
+
+1511984652 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\models\topping.h
+	<iostream>
+
+1511990907 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\models\topping.cpp
+	"Topping.h"
+	<string.h>
+	"Pizza.h"
+
+1511993750 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\view\main_interface.cpp
+	"Main_interface.h"
+	"Pizza_UI.h"
+	<stdlib.h>
+
+1511991623 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\view\main_interface.h
+	<iostream>
+	"Main_interface.h"
+
+1511979799 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\main.cpp
+	<iostream>
+	"Main_interface.h"
+
+1511987083 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\view\pizza_ui.h
+	<iostream>
+
+1511993484 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\view\pizza_ui.cpp
+	"Pizza_UI.h"
+	"Pizza.h"
+	"Main_interface.h"
+	"ControlerPizza.h"
+	<stdlib.h>
+
+1511990158 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\controlers\controlerpizza.cpp
+	"ControlerPizza.h"
+	<fstream>
+	"pizza.h"
+
+1511990172 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\controlers\controlerpizza.h
+	"Pizza.h"
+
