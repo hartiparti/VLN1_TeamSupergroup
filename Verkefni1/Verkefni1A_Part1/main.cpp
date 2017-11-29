@@ -15,7 +15,7 @@ int main()
     fin.open("textFile.txt");
     do{
         if((choice == 'n') || (choice == 'N')){
-                cout << "Exiting program";
+                cout << "Exiting program" << endl;
                 return 0;
             }
         if(fin.is_open()){
@@ -28,17 +28,20 @@ int main()
             cout << "Line nr: " << counter << " :";
             cout << read_line << " " << endl;
             }
+
+            do{
             cout << "--------------------------------" << endl;
-            cout << "Do you want to continue y/n? ";
-            cout << endl;
+            cout << "Do you want to continue y/n? " << endl;
             cin >> choice;
+          }
+          while(choice != 'y' && choice != 'n');
              if (fin.eof()){
                 break;
                 }
             }
         }while((choice != 'y') || (choice != 'n'));
 
-            cout << "End of file, exiting";
+            cout << "End of file, exiting" << endl;
     fin.close();
     return 0;
 }
