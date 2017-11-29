@@ -14,6 +14,8 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="include" />
+					<Add directory="Controler" />
+					<Add directory="C:/Users/Hartiparti/Desktop/3Vikna/VLN1_TeamSupergroup/SuperGroup_PizzaCo/include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -24,6 +26,8 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
+					<Add directory="Controler" />
+					<Add directory="C:/Users/Hartiparti/Desktop/3Vikna/VLN1_TeamSupergroup/SuperGroup_PizzaCo/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -34,15 +38,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/Bake.h" />
-		<Unit filename="include/Control.h" />
-		<Unit filename="include/Deliver.h" />
-		<Unit filename="include/Sales.h" />
+		<Unit filename="Controlers/Controlers.cpp" />
+		<Unit filename="Controlers/Controlers.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Bake.cpp" />
-		<Unit filename="src/Control.cpp" />
-		<Unit filename="src/Deliver.cpp" />
-		<Unit filename="src/Sales.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
