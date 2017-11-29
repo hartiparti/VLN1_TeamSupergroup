@@ -29,6 +29,9 @@ int main()
             cout << "Line nr: " << counter << " :";
             cout << read_line << " " << endl;
             }
+            if (fin.eof()){
+               break;
+               }
 
             do{
             cout << "--------------------------------" << endl;
@@ -36,13 +39,11 @@ int main()
             cin >> choice;
           }
           while(choice != 'y' && choice != 'n');
-             if (fin.eof()){
-                break;
-                }
+
             }
         }while((choice != 'y') || (choice != 'n'));
 
-            cout << "End of file, exiting" << endl;
+            cout << "End of file. Exiting" << endl;
     fin.close();
     return 0;
 }
