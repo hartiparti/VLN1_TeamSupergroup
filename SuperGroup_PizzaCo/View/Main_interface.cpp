@@ -2,6 +2,11 @@
 #include "Pizza_UI.h"
 #include "AdminUI.h"
 #include <stdlib.h>
+#include <time.h>
+#include <unistd.h>
+
+
+
 Main_interface::Main_interface(){
 
 
@@ -17,7 +22,7 @@ cout << "/    |    \\  \\     /  \\  ___/   \\___ \\  (  <_> ) |  Y Y  \\ \\  __
 cout << "\\____|__  /   \\/\\_/    \\___  > /____  >  \\____/  |__|_|  /  \\___  >  |____|     |__| /_____ \\ /_____ \\ \\____|__  / " << endl;
 cout << "        \\/                 \\/       \\/                 \\/       \\/                         \\/       \\/         \\/  " << endl;
 
-cin.ignore();
+sleep(2000);
 
 
 }
