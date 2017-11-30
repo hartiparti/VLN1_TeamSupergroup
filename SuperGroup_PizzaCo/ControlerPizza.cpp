@@ -1,6 +1,6 @@
 #include "ControlerPizza.h"
 #include <fstream>
-#include "pizza.h"
+#include "Pizza.h"
 using namespace std;
 
 

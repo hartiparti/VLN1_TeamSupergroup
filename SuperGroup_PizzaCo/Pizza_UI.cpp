@@ -25,9 +25,9 @@ void Pizza_UI::make_order(){
             cout << "Input topping and price: ";
             Pizza pizza(topCnt);
 
-        for(int i = 0; i < topCnt; i++){      /// Lista yfir áleggstegundir. Ættum að birta hér áleggstegund, ætti að vera til áleggstegundir og verð.
+        for(int i = 0; i < topCnt; i++){      /// Lista yfir ï¿½leggstegundir. ï¿½ttum aï¿½ birta hï¿½r ï¿½leggstegund, ï¿½tti aï¿½ vera til ï¿½leggstegundir og verï¿½.
 
-        Topping topping;                  /// Ættum að nota istream og lesa úr skrá.
+        Topping topping;                  /// ï¿½ttum aï¿½ nota istream og lesa ï¿½r skrï¿½.
         cin >> topping;
                                             /// Administratorinn a ad geta addad toppings.
         pizza.add_topping_to_pizza(topping);
@@ -61,7 +61,7 @@ void Pizza_UI::make_order(){
 
 
 void Pizza_UI::make_OrderScreen(){
-    system("CLS");          /// Hreinsa skjáinn
+    system("CLS");          /// Hreinsa skjï¿½inn
     Main_interface header;  /// gera tilvik af Main_interface
     header.print_Header();  /// Prenta header.
     cout << "                                   Make Order              " << endl;
@@ -71,10 +71,3 @@ void Pizza_UI::make_OrderScreen(){
     cout << "                               b: go back" << endl;
     cout << "                       ----------------------------------" << endl;
 }
-
-
-
-
-
-
-
