@@ -155,3 +155,62 @@
 1511990172 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\supergroup_pizzaco_workingon\controlers\controlerpizza.h
 	"Pizza.h"
 
+1512038668 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\controlers\controlerpizza.cpp
+	"ControlerPizza.h"
+	<fstream>
+	"pizza.h"
+
+1512038668 c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\controlers\controlerpizza.h
+	"Pizza.h"
+
+1512038668 c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\pizza.h
+	"Topping.h"
+	<iostream>
+
+1512038668 c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\topping.h
+	<iostream>
+
+1512038668 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\controlers\controlers.cpp
+	"Controlers.h"
+
+1512038668 c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\controlers\controlers.h
+
+1512038668 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\main.cpp
+	<iostream>
+	"Main_interface.h"
+
+1512038668 c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\main_interface.h
+	<iostream>
+	"Main_interface.h"
+
+1512038668 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\pizza.cpp
+	"Pizza.h"
+	"Main_interface.h"
+	"Pizza_UI.h"
+	"Topping.h"
+
+1512038668 c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\pizza_ui.h
+	<iostream>
+
+1512038668 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\topping.cpp
+	"Topping.h"
+	<string.h>
+	"Pizza.h"
+
+1512043975 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\main_interface.cpp
+	"Main_interface.h"
+	"Pizza_UI.h"
+	<stdlib.h>
+
+1512038668 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\pizza_ui.cpp
+	"Pizza_UI.h"
+	"Pizza.h"
+	"Main_interface.h"
+	"ControlerPizza.h"
+	<stdlib.h>
+
+1512043821 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\src\adminui.cpp
+	"AdminUI.h"
+
+1512043975 c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\include\adminui.h
+

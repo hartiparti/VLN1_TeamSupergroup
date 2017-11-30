@@ -10,13 +10,13 @@ void Main_interface::promptWelcome(){
 
 cout <<      "              *******************************************************\n\r"
              "              *                                                     *\n\r"
-             "              *        Welcome to |A w e S o m e P i Z z A|         *\n\r"
+             "              *        Welcome to |A w e s o m e P i z z A|         *\n\r"
              "              *                                                     *\n\r"
              "              *******************************************************\n\r"
              "              *                                                     *\n\r"
              "              *                                                     *\n\r"
              "              *        Sales managementForce                        *\n\r"
-             "              *        Version: 0.0.1                               *\n\r"
+             "              *        Version: 0.0.2                               *\n\r"
              "              *        Date   : 29-11-2017                          *\n\r"
              "              *                                                     *\n\r"
              "              ******************************************************" << endl;
@@ -24,7 +24,9 @@ cout <<      "              ****************************************************
 
 void Main_interface::printScreen(){
 
-
+    cout << "                  *            a:  Admin                * " << endl << endl;
+    cout << "                  *            b:  Baker                * " << endl << endl;
+    cout << "                  *            r:  Staff at register    * " << endl << endl;
     cout << "                  *            o:  Order Screen         * " << endl << endl;
     cout << "                  *            r:  Read Order           * " << endl << endl;
     cout << "                  *            q:  Quit                 * " << endl;
@@ -73,6 +75,7 @@ void Main_interface::startUI(){
     system("CLS");
     promptWelcome();
     printScreen();
+    cout << "What interface background do you want to access? ";
     cin >> input;
     if (input == 'o'){
        Pizza_UI pizza_ui;
@@ -84,6 +87,21 @@ void Main_interface::startUI(){
         read_OrderScreen();
 
     }
+/*
+    else if(input == 'a'){
+
+
+                        //hafa password 123
+    }
+    else if(input == 'b'){
+
+
+    }
+    else if(input == 'r'){
+
+
+    }
+*/
     else{
     system("CLS");
 

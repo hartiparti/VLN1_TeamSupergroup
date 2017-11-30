@@ -57,7 +57,9 @@
 		<Unit filename="View/Pizza_UI.cpp" />
 		<Unit filename="View/Pizza_UI.h" />
 		<Unit filename="View/View.h" />
+		<Unit filename="include/AdminUI.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/AdminUI.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
