@@ -1,3 +1,2 @@
-3 ppp 0
-ppp 0
-ppp 0
+2 ppp 3
+ppp 4

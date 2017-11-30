@@ -16,6 +16,7 @@ class Main_interface
         void read_OrderScreen();
         void print_Header();
         void promptWelcome();
+        void Welcome();
 
 
     private:

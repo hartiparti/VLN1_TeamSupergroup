@@ -7,7 +7,24 @@ Main_interface::Main_interface(){
 
 }
 
+
+void Main_interface::Welcome(){
+
+cout << "   _____                                                            __________  .__                       _____    " << endl;
+cout << "  /  _  \\   __  _  __   ____     ______   ____     _____     ____   \\______   \\ |__| ________ ________   /  _  \\   " << endl;
+cout << " /  /_\\  \\  \\ \\/ \\/ / _/ __ \\   /  ___/  /  _ \\   /     \\  _/ __ \\   |     ___/ |  | \\___   / \\___   /  /  /_\\  \\  " << endl;
+cout << "/    |    \\  \\     /  \\  ___/   \\___ \\  (  <_> ) |  Y Y  \\ \\  ___/   |    |     |  |  /    /   /    /  /    |    \\ " << endl;
+cout << "\\____|__  /   \\/\\_/    \\___  > /____  >  \\____/  |__|_|  /  \\___  >  |____|     |__| /_____ \\ /_____ \\ \\____|__  / " << endl;
+cout << "        \\/                 \\/       \\/                 \\/       \\/                         \\/       \\/         \\/  " << endl;
+
+
+
+
+}
+
 void Main_interface::promptWelcome(){
+
+
 
 cout <<      "              *******************************************************\n\r"
              "              *                                                     *\n\r"
@@ -69,7 +86,8 @@ void Main_interface::read_OrderScreen(){
 
 void Main_interface::startUI(){
 
-
+    Welcome();
+    system("PAUSE");
     cout << endl;
     char input = '\0';
     while(input != 'q'){

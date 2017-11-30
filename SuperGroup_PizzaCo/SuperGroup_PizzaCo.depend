@@ -19,8 +19,9 @@
 
 1511806689 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\include\sales.h
 
-1511966195 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\main.cpp
+1511979799 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\main.cpp
 	<iostream>
+	"Main_interface.h"
 
 1511966605 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\controlers\controlers.cpp
 	"Controlers.h"
@@ -32,11 +33,15 @@
 
 1511968242 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\order.h
 
-1511968134 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\pizza.cpp
+1511988882 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\pizza.cpp
 	"Pizza.h"
+	"Main_interface.h"
+	"Pizza_UI.h"
+	"Topping.h"
 
-1511970501 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\pizza.h
-	"Toppings.h"
+1512046719 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\pizza.h
+	"Topping.h"
+	<iostream>
 
 1511970377 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\toppings.cpp
 
@@ -216,4 +221,47 @@
 	<stdlib.h>
 
 1512046946 c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\include\adminui.h
+
+1511990158 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\controlers\controlerpizza.cpp
+	"ControlerPizza.h"
+	<fstream>
+	"pizza.h"
+
+1511990172 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\controlers\controlerpizza.h
+	"Pizza.h"
+
+1511984652 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\topping.h
+	<iostream>
+
+1512051146 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\main_interface.h
+	<iostream>
+	"Main_interface.h"
+
+1511987083 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\pizza_ui.h
+	<iostream>
+
+1511990907 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\models\topping.cpp
+	"Topping.h"
+	<string.h>
+	"Pizza.h"
+
+1511993892 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\pizza_ui.cpp
+	"Pizza_UI.h"
+	"Pizza.h"
+	"Main_interface.h"
+	"ControlerPizza.h"
+	<stdlib.h>
+
+1512047838 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\src\adminui.cpp
+	"AdminUI.h"
+	<iostream>
+	<stdlib.h>
+
+1512047838 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\include\adminui.h
+
+1512047838 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\main_interface.cpp
+	"Main_interface.h"
+	"Pizza_UI.h"
+	"AdminUI.h"
+	<stdlib.h>
 
