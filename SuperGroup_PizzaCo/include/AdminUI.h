@@ -6,12 +6,13 @@ class AdminUI
 {
     public:
         AdminUI();
-        void password(int password);
+        void passwordInput();
+        void adminscreen();
         virtual ~AdminUI();
 
 
     private:
-        int passwordInput;
+        int password;
 };
 
 #endif // ADMINUI_H

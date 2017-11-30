@@ -197,9 +197,10 @@
 	<string.h>
 	"Pizza.h"
 
-1512043975 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\main_interface.cpp
+1512047396 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\main_interface.cpp
 	"Main_interface.h"
 	"Pizza_UI.h"
+	"AdminUI.h"
 	<stdlib.h>
 
 1512038668 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view\pizza_ui.cpp
@@ -209,8 +210,10 @@
 	"ControlerPizza.h"
 	<stdlib.h>
 
-1512043821 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\src\adminui.cpp
+1512046996 source:c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\src\adminui.cpp
 	"AdminUI.h"
+	<iostream>
+	<stdlib.h>
 
-1512043975 c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\include\adminui.h
+1512046946 c:\users\filippus\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\include\adminui.h
 

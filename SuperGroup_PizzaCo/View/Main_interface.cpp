@@ -1,5 +1,6 @@
 #include "Main_interface.h"
 #include "Pizza_UI.h"
+#include "AdminUI.h"
 #include <stdlib.h>
 Main_interface::Main_interface(){
 
@@ -77,7 +78,14 @@ void Main_interface::startUI(){
     printScreen();
     cout << "What interface background do you want to access? ";
     cin >> input;
-    if (input == 'o'){
+    if(input == 'a'){
+        AdminUI admin;
+        admin.passwordInput();
+        admin.adminscreen();
+
+                        //hafa password 123
+    }
+    else if (input == 'o'){
        Pizza_UI pizza_ui;
        pizza_ui.make_OrderScreen();
        pizza_ui.make_order();
@@ -87,12 +95,9 @@ void Main_interface::startUI(){
         read_OrderScreen();
 
     }
+
+
 /*
-    else if(input == 'a'){
-
-
-                        //hafa password 123
-    }
     else if(input == 'b'){
 
 
