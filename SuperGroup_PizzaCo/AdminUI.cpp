@@ -11,18 +11,22 @@ AdminUI::AdminUI()
 
 void AdminUI::passwordInput()
 {
-    system("CLS");
-    int password;
+system("CLS");
+    string password = "1234";           /// Breytt í string, þar sem int getur hreinlega overflowað.
     cout << endl << endl << endl;
     cout << "                        You must be an admin to access this page." << endl;
     cout << "                       -------------------------------------------" << endl;
     cout << "                               Type in password: ";
-    cin >> password;
+    string  input_password = " ";
 
-    while(password != 1234)
+    while(input_password != password)
     {
-        cout << "                            Wrong password, try again: ";
-        cin >> password;
+
+        cin >> input_password;
+        if (input_password  !=password)
+        {   cout << "                        Wrong password, try again: ";
+
+        }
     }
 
 }

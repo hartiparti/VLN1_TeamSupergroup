@@ -11,11 +11,11 @@ class Main_interface
     public:
         Main_interface();
         void startUI();
-        void printScreen();
+        void printSelection();
         void make_OrderScreen();
         void read_OrderScreen();
         void print_Header();
-        void promptWelcome();
+        void Main_Version();
         void Welcome();
 
 

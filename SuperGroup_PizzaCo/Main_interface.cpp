@@ -4,8 +4,6 @@
 #include <stdlib.h>
 
 
-
-
 Main_interface::Main_interface(){
 
 
@@ -20,35 +18,39 @@ cout << " /  /_\\  \\  \\ \\/ \\/ / _/ __ \\   /  ___/  /  _ \\   /     \\  _/ _
 cout << "/    |    \\  \\     /  \\  ___/   \\___ \\  (  <_> ) |  Y Y  \\ \\  ___/   |    |     |  |  /    /   /    /  /    |    \\ " << endl;
 cout << "\\____|__  /   \\/\\_/    \\___  > /____  >  \\____/  |__|_|  /  \\___  >  |____|     |__| /_____ \\ /_____ \\ \\____|__  / " << endl;
 cout << "        \\/                 \\/       \\/                 \\/       \\/                         \\/       \\/         \\/  " << endl;
+cout << endl;
+
 
 }
 
-void Main_interface::promptWelcome(){
 
 
+void Main_interface::Main_Version(){
 
-  cout << "                 ******************************************************* "<< endl;
-  cout << "                 *                                                     * "<< endl;
-  cout << "                 *        Welcome to |A w e s o m e P i z z A|         * "<< endl;
-  cout << "                 *                                                     * "<< endl;
-  cout << "                 ******************************************************* "<< endl;
-  cout << "                 *                                                     * "<< endl;
-  cout << "                 *                                                     * "<< endl;
-  cout << "                 *        Sales managementForce                        * "<< endl;
-  cout << "                 *        Version: 0.0.2                               * "<< endl;
-  cout << "                 *        Date   : 29-11-2017                          * "<< endl;
-  cout << "                 *                                                     * "<< endl;
-  cout << "                 ******************************************************* "<< endl;
+cout << "      *******************************************************"<< endl;
+cout << "      *                                                     *"<< endl;
+cout << "      *        Welcome to |A w e s o m e P i z z A|         *"<< endl;
+cout << "      *******************************************************"<< endl;
+cout << "      *                                                     *"<< endl;
+cout << "      *                                                     *"<< endl;
+cout << "      *                Sales managementForce                *"<< endl;
+cout << "      *                Version: 0.0.2                       *"<< endl;
+cout << "      *                Date   : 29-11-2017                  *"<< endl;
+cout << "      *                                                     *"<< endl;
+cout << "      *******************************************************"<< endl;
+
 }
 
-void Main_interface::printScreen(){
+void Main_interface::printSelection(){
 
-    cout << "                  *            a:  Admin                * " << endl << endl;
-    cout << "                  *            b:  Baker/Read Order     * " << endl << endl;
-    cout << "                  *            r:  Staff at register    * " << endl << endl;
-    cout << "                  *            o:  Order Screen         * " << endl << endl;
-    cout << "                  *            q:  Quit                 * " << endl;
-    cout << "                  ...................................... " << endl << endl;
+cout << "      *                   a:  Admin                         *" << endl;
+cout << "      *                   b:  Baker                         *" << endl;
+cout << "      *                   r:  Staff at register             *" << endl;
+cout << "      *                   o:  Order Screen                  *" << endl;
+cout << "      *                   q:  Quit                          *" << endl;
+cout << "      *                                                     *" << endl;
+cout << "      *.....................................................*" << endl;
+
 
 
 }
@@ -56,26 +58,20 @@ void Main_interface::printScreen(){
 
 void Main_interface::print_Header(){
 
-   cout <<   "              ********************************************************\n\r"
-             "              *                                                      *\n\r"
-             "              *            |A w e S o m e P i Z z A|                 *\n\r"
-             "              *          --------------------------                  *\n\r"
-             "              *             Sales managementForce                    *\n\r"
-             "              *          --------------------------                  *\n\r"
-             "              ********************************************************\n\r" << endl;
+   cout <<   "      ********************************************************" << endl;
+   cout <<   "      *                                                      *" << endl;
+   cout <<   "      *            |A w e S o m e P i Z z A|                 *" << endl;
+   cout <<   "      *          --------------------------                  *" << endl;
+   cout <<   "      *             Sales managementForce                    *" << endl;
+   cout <<   "      *          --------------------------                  *" << endl;
+   cout <<   "      ********************************************************" << endl;
 
 
 
 
 }
-/*
-void Main_interface::print_Bottom(){
-cout << "   ...........................   " << endl;
-cout << "                   Version 1.0   " << endl;
 
 
-}
-*/
 
 void Main_interface::read_OrderScreen(){
     system("CLS");
@@ -86,48 +82,31 @@ void Main_interface::read_OrderScreen(){
 
 void Main_interface::startUI(){
 
-    Welcome();
-    system("PAUSE");
-    cout << endl;
+
     char input = '\0';
     while(input != 'q'){
+    cout << endl;
+    system("PAUSE");
     system("CLS");
-    promptWelcome();
-    printScreen();
-    cout << "What interface background do you want to access? ";
+    Main_Version();
+    printSelection();
+    AdminUI admin;
+    cout << endl;
     cin >> input;
-    if(input == 'a'){
-        AdminUI admin;
+    switch(input){
+    case 'a':
         admin.passwordInput();
         admin.adminscreen();
-
-                        //hafa password 123
-    }
-    else if (input == 'o'){
-       Pizza_UI pizza_ui;
-       pizza_ui.make_OrderScreen();
-       pizza_ui.make_order();
-
-    }
-    else if(input == 'r'){
+        break;
+    case 'b':
+        cout << "Nothing yet";
+        system("PAUSE");
+        break;
+    case 'o':
         read_OrderScreen();
-
-    }
-
-
-/*
-    else if(input == 'b'){
-
-
-    }
-    else if(input == 'r'){
-
-
-    }
-*/
-    else{
-    system("CLS");
+        break;
+        }
 
     }
 }
-}
+

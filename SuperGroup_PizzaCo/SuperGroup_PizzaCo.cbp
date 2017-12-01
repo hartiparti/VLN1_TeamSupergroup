@@ -44,22 +44,29 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Controlers/ControlerPizza.cpp" />
-		<Unit filename="Controlers/ControlerPizza.h" />
-		<Unit filename="Controlers/Controlers.cpp" />
-		<Unit filename="Controlers/Controlers.h" />
-		<Unit filename="Models/Pizza.cpp" />
-		<Unit filename="Models/Pizza.h" />
-		<Unit filename="Models/Topping.cpp" />
-		<Unit filename="Models/Topping.h" />
-		<Unit filename="View/Main_interface.cpp" />
-		<Unit filename="View/Main_interface.h" />
-		<Unit filename="View/Pizza_UI.cpp" />
-		<Unit filename="View/Pizza_UI.h" />
-		<Unit filename="View/View.h" />
-		<Unit filename="include/AdminUI.h" />
+		<Unit filename="AdminUI.cpp" />
+		<Unit filename="AdminUI.h" />
+		<Unit filename="AdminView.cpp" />
+		<Unit filename="AdminView.h" />
+		<Unit filename="Baker_UI.cpp" />
+		<Unit filename="Baker_UI.h" />
+		<Unit filename="ControlerPizza.cpp" />
+		<Unit filename="ControlerPizza.h" />
+		<Unit filename="Controlers.cpp" />
+		<Unit filename="Controlers.h" />
+		<Unit filename="Main_interface.cpp" />
+		<Unit filename="Main_interface.h" />
+		<Unit filename="Models.cpp" />
+		<Unit filename="Models.h" />
+		<Unit filename="Pizza.cpp" />
+		<Unit filename="Pizza.h" />
+		<Unit filename="Pizza_UI.cpp" />
+		<Unit filename="Pizza_UI.h" />
+		<Unit filename="Topping.cpp" />
+		<Unit filename="Topping.h" />
+		<Unit filename="View.cpp" />
+		<Unit filename="View.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/AdminUI.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
