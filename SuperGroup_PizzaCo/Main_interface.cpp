@@ -27,27 +27,26 @@ void Main_interface::promptWelcome(){
 
 
 
-cout <<      "              *******************************************************\n\r"
-             "              *                                                     *\n\r"
-             "              *        Welcome to |A w e s o m e P i z z A|         *\n\r"
-             "              *                                                     *\n\r"
-             "              *******************************************************\n\r"
-             "              *                                                     *\n\r"
-             "              *                                                     *\n\r"
-             "              *        Sales managementForce                        *\n\r"
-             "              *        Version: 0.0.2                               *\n\r"
-             "              *        Date   : 29-11-2017                          *\n\r"
-             "              *                                                     *\n\r"
-             "              ******************************************************" << endl;
+  cout << "                 ******************************************************* "<< endl;
+  cout << "                 *                                                     * "<< endl;
+  cout << "                 *        Welcome to |A w e s o m e P i z z A|         * "<< endl;
+  cout << "                 *                                                     * "<< endl;
+  cout << "                 ******************************************************* "<< endl;
+  cout << "                 *                                                     * "<< endl;
+  cout << "                 *                                                     * "<< endl;
+  cout << "                 *        Sales managementForce                        * "<< endl;
+  cout << "                 *        Version: 0.0.2                               * "<< endl;
+  cout << "                 *        Date   : 29-11-2017                          * "<< endl;
+  cout << "                 *                                                     * "<< endl;
+  cout << "                 ******************************************************* "<< endl;
 }
 
 void Main_interface::printScreen(){
 
     cout << "                  *            a:  Admin                * " << endl << endl;
-    cout << "                  *            b:  Baker                * " << endl << endl;
+    cout << "                  *            b:  Baker/Read Order     * " << endl << endl;
     cout << "                  *            r:  Staff at register    * " << endl << endl;
     cout << "                  *            o:  Order Screen         * " << endl << endl;
-    cout << "                  *            r:  Read Order           * " << endl << endl;
     cout << "                  *            q:  Quit                 * " << endl;
     cout << "                  ...................................... " << endl << endl;
 
@@ -130,9 +129,5 @@ void Main_interface::startUI(){
     system("CLS");
 
     }
-
-
-
-
 }
 }

@@ -33,7 +33,8 @@ void AdminUI::adminscreen()
     cout << "                      Welcome, what would you like to do today?" << endl;
     cout << "                           e: Edit prices of menu items" << endl;
     cout << "                           t: Access the toppings page" << endl;
-    cout << "                           x: Blow up Dominos HQ" << endl;
+    cout << "                           x: Create offer" << endl;
+    cout << "                           a: Create new store" << endl;
     system("PAUSE");
 }
 
