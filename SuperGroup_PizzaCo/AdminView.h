@@ -6,6 +6,8 @@ class AdminView
 {
     public:
         AdminView();
+        void adminscreen();
+        void admin_ask_login();
         virtual ~AdminView();
 
     protected:

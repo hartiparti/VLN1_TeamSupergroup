@@ -1,6 +1,7 @@
 #include "Main_interface.h"
 #include "Pizza_UI.h"
 #include "AdminUI.h"
+#include "AdminView.h"
 #include <stdlib.h>
 
 
@@ -91,12 +92,14 @@ void Main_interface::startUI(){
     Main_Version();
     printSelection();
     AdminUI admin;
+    AdminView login;
     cout << endl;
     cin >> input;
     switch(input){
     case 'a':
-        admin.passwordInput();
-        admin.adminscreen();
+        login.admin_ask_login();
+        admin.passwordInput();;
+        login.adminscreen();
         break;
     case 'b':
         cout << "Nothing yet";

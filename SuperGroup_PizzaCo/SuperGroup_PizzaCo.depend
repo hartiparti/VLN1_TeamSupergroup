@@ -378,17 +378,17 @@
 
 1512055472 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\view.h
 
-1512138402 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\adminui.cpp
+1512142492 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\adminui.cpp
 	"AdminUI.h"
 	<iostream>
-	<stdlib.h>
 
-1512055472 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\adminui.h
+1512142307 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\adminui.h
 
-1512140668 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\main_interface.cpp
+1512142572 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\main_interface.cpp
 	"Main_interface.h"
 	"Pizza_UI.h"
 	"AdminUI.h"
+	"AdminView.h"
 	<stdlib.h>
 
 1512138285 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\pizza.cpp
@@ -404,8 +404,10 @@
 1512139675 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\baker_ui.h
 	"string"
 
-1512139647 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\adminview.cpp
+1512142587 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\adminview.cpp
 	"AdminView.h"
+	<stdlib.h>
+	<iostream>
 
-1512139647 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\adminview.h
+1512142307 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\supergroup_pizzaco\adminview.h
 

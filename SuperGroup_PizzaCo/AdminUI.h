@@ -7,7 +7,6 @@ class AdminUI
     public:
         AdminUI();
         void passwordInput();
-        void adminscreen();
         virtual ~AdminUI();
 
 
