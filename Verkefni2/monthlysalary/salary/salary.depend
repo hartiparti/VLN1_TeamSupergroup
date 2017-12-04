@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1512395353 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\verkefni2\monthlysalary\salary\main.cpp
+	<iostream>
+	<Salaryui.h>
+
+1512392484 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\verkefni2\monthlysalary\salary\models\employee.cpp
+	"Employee.h"
+	<iostream>
+
+1512392473 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\verkefni2\monthlysalary\salary\models\employee.h
+	<string>
+
+1512393955 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\verkefni2\monthlysalary\salary\reposatory\employeerepo.cpp
+	"EmployeeRepo.h"
+	<iostream>
+
+1512394008 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\verkefni2\monthlysalary\salary\reposatory\employeerepo.h
+	"Employee.h"
+	<fstream>
+
+1512394382 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\verkefni2\monthlysalary\salary\services\employeeservices.cpp
+	"EmployeeServices.h"
+	"EmployeeRepo.h"
+	<iostream>
+
+1512393327 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\verkefni2\monthlysalary\salary\services\employeeservices.h
+	"Employee.h"
+
+1512395410 source:c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\verkefni2\monthlysalary\salary\ui\salaryui.cpp
+	"Salaryui.h"
+	<iostream>
+	"Employee.h"
+	"EmployeeServices.h"
+
+1512395241 c:\users\hartiparti\desktop\3vikna\vln1_teamsupergroup\verkefni2\monthlysalary\salary\ui\salaryui.h
+	"Employee.h"
+	"EmployeeServices.h"
+

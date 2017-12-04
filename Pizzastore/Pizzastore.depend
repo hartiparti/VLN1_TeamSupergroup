@@ -1,0 +1,134 @@
+# depslib dependency file v1.0
+1512381960 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\repo\pizzarepo.cpp
+	<fstream>
+	<iostream>
+	"Pizzarepo.h"
+	"Pizza.h"
+
+1512381746 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\repo\pizzarepo.h
+	"pizza.h"
+
+1512381672 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\repo\toppingrepo.cpp
+	"Toppingrepo.h"
+	<vector>
+	<fstream>
+
+1512399114 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\repo\toppingrepo.h
+	<vector>
+	"Topping.h"
+
+1512326151 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\main.cpp
+	<iostream>
+	"Main_ui.h"
+	"Main_view.h"
+	<stdlib.h>
+
+1512313339 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\main_ui.h
+	<iostream>
+
+1512399692 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\main_ui.cpp
+	"Main_ui.h"
+	"Baker_ui.h"
+	"Main_view.h"
+	"Admin_ui.h"
+	"AdminView.h"
+	<stdlib.h>
+
+1512319175 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\view\main_view.h
+	"Main_ui.h"
+
+1512315025 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\view\main_view.cpp
+	"Main_view.h"
+	"Main_ui.h"
+
+1512314530 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\models\inventory.cpp
+	"Inventory.h"
+
+1512314530 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\models\inventory.h
+
+1512325223 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\models\order.cpp
+	"Order.h"
+	"string.h"
+
+1512325216 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\models\order.h
+	"string.h"
+	<iostream>
+
+1512380087 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\models\pizza.cpp
+	"Pizza.h"
+	<stddef.h>
+	<fstream>
+
+1512380179 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\models\pizza.h
+	<iostream>
+	"Topping.h"
+	"vector"
+
+1512314797 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\repo\inventoryrepo.cpp
+	"Inventoryrepo.h"
+
+1512314797 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\repo\inventoryrepo.h
+
+1512314687 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\admin_ui.cpp
+	"Admin_ui.h"
+
+1512399724 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\admin_ui.h
+
+1512326773 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\baker_ui.cpp
+	"Baker_ui.h"
+	"Order.h"
+	"Baker_view.h"
+	"Main_ui.h"
+
+1512322642 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\baker_ui.h
+	"string.h"
+	<iostream>
+	"Order.h"
+
+1512314666 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\register_ui.cpp
+	"Register_ui.h"
+
+1512314666 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\register_ui.h
+
+1512378870 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\models\topping.cpp
+	"Topping.h"
+	"fstream"
+
+1512380801 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\models\topping.h
+	<iostream>
+	<string.h>
+
+1512316503 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\orderscr_ui.cpp
+	"OrderScr_ui.h"
+
+1512316503 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\orderscr_ui.h
+
+1512325678 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\view\baker_view.cpp
+	"Baker_view.h"
+	"Baker_ui.h"
+
+1512325651 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\view\baker_view.h
+	<iostream>
+
+1512397877 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\adminui.cpp
+	"AdminUI.h"
+	<iostream>
+
+1512398850 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\adminui.h
+
+1512399153 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\adminui.cpp
+	"AdminUI.h"
+	<iostream>
+
+1512314613 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\register.cpp
+	"Register.h"
+
+1512314613 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\ui\register.h
+
+1512142587 source:c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\view\adminview.cpp
+	"AdminView.h"
+	<stdlib.h>
+	<iostream>
+
+1512142307 c:\users\hartiparti\desktop\test fyrir verkefnalausnir\pizzatest\pizzastore\view\adminview.h
+

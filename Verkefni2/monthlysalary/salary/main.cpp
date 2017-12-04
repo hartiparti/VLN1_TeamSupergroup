@@ -1,9 +1,10 @@
 #include <iostream>
-
+#include <Salaryui.h>
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Salaryui start;
+    start.mainui();
     return 0;
 }
