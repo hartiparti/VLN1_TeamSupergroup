@@ -8,6 +8,7 @@ class AdminView
         AdminView();
         void adminscreen();
         void admin_ask_login();
+        void edit_screen();
         virtual ~AdminView();
 
     protected:

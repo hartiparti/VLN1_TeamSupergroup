@@ -8,7 +8,7 @@ int main()
 {
 
    Main_view printWelcome;
-   printWelcome.Welcome_Screen();
+   printWelcome.WelcomeScreen();
    system("PAUSE");
    Main_ui Awesomepizza;
    Awesomepizza.startUI();

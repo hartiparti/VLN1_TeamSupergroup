@@ -1,7 +1,7 @@
 #include "Toppingrepo.h"
 
-#include <vector>
-#include <fstream>
+#include <vector>                       /// Sjálfsögðu include-a vector
+#include <fstream>                      /// Include-a líka fstream.
 
 using namespace std;
 
@@ -12,27 +12,23 @@ Toppingrepo::Toppingrepo()
 
 Toppingrepo::~Toppingrepo()
 {
-    //dtor
+
 }
 
 void Toppingrepo::storeToppings(const vector<Topping> &toppings){
-    ofstream fout;                                         /// Opna binary skrá.
-    fout.open("toppings.bin", ios::binary);
+
+    ofstream fout;                                          /// Opna binary skrá.
+    fout.open("topping.bin", ios::binary);
 
     int topping_count = toppings.size();                   /// Stærðin á vector.
 
     fout.write((char*)(&topping_count), sizeof(int));
 
-    for(int i = 0; i < topping_count; i++){              /// Skrifað í skrá
+    for(int i = 0; i < topping_count; i++){                 /// Skrifað í skrá
         toppings[i].write(fout);
     }
-
-    fout.close();                                       /// Loka.
-
-
+    fout.close();                                           /// Loka
 }
-
-
 
 vector<Topping> Toppingrepo::retriveToppings(){
 
@@ -40,7 +36,7 @@ vector<Topping> Toppingrepo::retriveToppings(){
     Topping topping;
 
     ifstream fin;
-    fin.open("topping.bin", ios::binary);                  /// Lesa í binary skrá,
+    fin.open("topping.bin", ios::binary|ios::out);           /// Lesa í binary skrá,
 
     if(fin.is_open()){
 

@@ -4,7 +4,7 @@
 #include <iostream>
 #include "Order.h"
 using namespace std;
-
+/*Óklárað, þarf að gera service klasa, sem hjálpar að "tagga" pizzur/pantanir sem ready eða waiting fyrir hverja búð */
 class Baker_ui
 {
     public:

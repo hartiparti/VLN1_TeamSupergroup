@@ -1,6 +1,6 @@
 #include "Topping.h"
 #include "fstream"
-
+/* Topping er "model" klasi sem er bara "topping" */
 Topping::Topping()
 {
     //ctor
@@ -11,7 +11,7 @@ Topping::~Topping()
     //dtor
 }
 
-Topping::Topping(string name, double price)
+Topping::Topping(string name, double price)         /// Svo við getum accessað Topping breyturnar.
 {
     this->name = name;
     this->price = price;
@@ -25,7 +25,7 @@ void Topping::write(ofstream& fout) const {
 
     fout.write((char*)(&stringLength), sizeof(int));
     fout.write(name.c_str(), stringLength);
-    fout.write((char*)(&price), sizeof(double));            /// Þarf ekki að gera ráð fyrir Null character, þetta er double.
+    fout.write((char*)(&price), sizeof(double));  /// Þarf ekki að gera ráð fyrir Null character, þetta er double.
 
 
 }
@@ -45,10 +45,10 @@ void Topping::read(istream& fin){
     delete[]str;
 
 }
-
+                                                                /// Yfirskrifa << og >> til þess að geta prentað á skjá, úr Model
 istream& operator >> (istream& in, Topping& topping){
     cout << "Name: ";
-    in >> ws;           /// til þess að sleppa "enter"   Skrifar ekki í skrá
+    in >> ws;  /// til þess að sleppa "enter" Skrifar ekki í skrá
     getline(in, topping.name);
 
     cout << "Price: ";
@@ -59,8 +59,8 @@ istream& operator >> (istream& in, Topping& topping){
 
 ostream& operator << (ostream& out, const Topping& topping){
 
-    out << "Topping: " << topping.name << " ";
-    out << "Price: " << topping.price;
+    out <<"Topp:"<<"|" << topping.name << "|" <<" ";
+    out <<"Price:"<<"|"<< topping.price << "|" <<" Kr";
 
     return out;
 

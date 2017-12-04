@@ -8,10 +8,11 @@ class Main_view
     public:
 
         Main_view();
-        void Welcome_Screen();   /// Prentar welcome screen
-        void print_version();    /// Prentar version af forritinu
-        void print_Header();    /// Prentar header
+        void WelcomeScreen();   /// Prentar welcome screen
+        void printVersion();    /// Prentar version af forritinu
+        void printHeader();    /// Prentar header
         void printSelection();  /// Prentar val
+
 
 
     private:

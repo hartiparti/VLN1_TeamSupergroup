@@ -1,5 +1,7 @@
 #include "Order.h"
 #include "string.h"
+
+/* Gerir ekkert ennþá */
 Order::Order(int order_number, double phone_number, string name, double price)
 {
 

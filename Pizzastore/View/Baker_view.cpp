@@ -1,6 +1,6 @@
 #include "Baker_view.h"
 #include "Baker_ui.h"
-
+/* Ennþá í vinnslu */
 
 Baker_view::Baker_view()
 {
@@ -37,7 +37,6 @@ cout << "      |.........................................|..........|" << endl;
 
 void Baker_view::Baker_ScreenBottom(){
 
-
 cout << "      |.........................................|..........|" << endl;
 cout << "      |                                         |          |" << endl;
 cout << "      |                                         |          |" << endl;
@@ -51,22 +50,7 @@ cout << "      *                                                    |" << endl;
 cout << "      _____________________________________________________" << endl;
 cout << "              r: Mark ready   b:  back  q:  Quit          " << endl;
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 void Baker_view::Baker_header(){

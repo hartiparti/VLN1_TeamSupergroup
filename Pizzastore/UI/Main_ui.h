@@ -9,7 +9,7 @@ class Main_ui
         Main_ui();
         virtual ~Main_ui();
         void startUI();         /// Byjar forritid
-
+        void printStart();
 
 
     private:
