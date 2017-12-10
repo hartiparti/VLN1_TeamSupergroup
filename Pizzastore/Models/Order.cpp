@@ -69,43 +69,55 @@ void Order::write_orders(ofstream& fout) const{
 
 void Order::read_orders(ifstream& fin){
 
-    int string_length_name = name.length();
-    fin.read((char*)(&string_length_name), sizeof(int));
-    char *str_temp1 = new char[string_length_name];       /// Kviklegt fylki af stærðinn stringLength
-    fin.read(str_temp1, string_length_name);
-    name = str_temp1;
+    int stringLength = name.length();
+    fin.read((char*)(&stringLength), sizeof(int));
+    char *str = new char[stringLength];       /// Kviklegt fylki af stærðinn stringLength
+    fin.read(str, stringLength);
+    name = str;
 
-    int string_length_phone = phone_number.length();
-    fin.read((char*)(&string_length_phone), sizeof(int));
-    char *str_temp2 = new char[string_length_phone];
-    fin.read(str_temp2, string_length_phone);
-    phone_number = str_temp2;
+    int stringLength2 = phone_number.length();
+    char *str2 = new char[stringLength2];
+    fin.read(str2, stringLength2);
+    phone_number = str2;
 
     fin.read((char*)(&price), sizeof(double));
     fin.read((char*)(&order_number), sizeof(int));
 
+    delete[]str;
+    delete[]str2;
 
-    delete[] str_temp1;          /// Ekki gleyma ad eyda.
-    delete[] str_temp2;
+
+
+
+
+
+
 
 }
 
 ostream& operator << (ostream& out, const Order& order){
-
-    cout << "Name: " << out << order.name << endl;
-    cout << "Phone number: "<<  out << order.phone_number << endl;
     cout << endl;
+    cout << "Name: " << endl;
+    out << order.name << endl;
+    cout << "Phone number: ";
+    out << order.phone_number;
+    out << order.price;
+    out << order.order_number;
+    cout << endl;
+
 
     return out;
 
 }
 
 istream& operator >> (istream& in, Order& order){
-    cout << "Name of customer: ";
+    cout << "Name of customer: " << endl;
     in >> ws;
-    getline(in, order.name);     // Getline til að fá nafnið með whitespace
+    getline(in, order.name);
     cout << "Phone number: ";
-    in >> order.phone_number;
+    cout << endl;
+    getline(in, order.phone_number);
+
 
     return in;
 

@@ -63,6 +63,8 @@
 		<Unit filename="Services/OrderServices.h" />
 		<Unit filename="Services/PizzaServices.cpp" />
 		<Unit filename="Services/PizzaServices.h" />
+		<Unit filename="Services/RegisterServices.cpp" />
+		<Unit filename="Services/RegisterServices.h" />
 		<Unit filename="UI/AdminUI.cpp" />
 		<Unit filename="UI/AdminUI.h" />
 		<Unit filename="UI/Baker_ui.cpp" />
@@ -71,9 +73,8 @@
 		<Unit filename="UI/Main_ui.h" />
 		<Unit filename="UI/OrderScr_ui.cpp" />
 		<Unit filename="UI/OrderScr_ui.h" />
-		<Unit filename="UI/Register.h" />
-		<Unit filename="UI/Register_ui.cpp" />
-		<Unit filename="UI/Register_ui.h" />
+		<Unit filename="UI/RegisterUI.cpp" />
+		<Unit filename="UI/RegisterUI.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

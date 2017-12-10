@@ -10,10 +10,10 @@ class RegisterServices
     public:
         RegisterServices();
         vector <Order> readOrders();
-
+        void test();
 
     private:
-        Orderrepo orderrepo;
+        Orderrepo orderrepo_list_orders;
 };
 
 #endif // REGISTERSERVICES_H
