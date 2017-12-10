@@ -1,7 +1,8 @@
 #include "Baker_ui.h"
 #include "Order.h"
-#include "Baker_view.h"
 #include "Main_ui.h"
+#include "BakerServices.h"
+#include <stdlib.h>
 Baker_ui::Baker_ui()
 {
     //ctor
@@ -13,6 +14,38 @@ Baker_ui::~Baker_ui()
 }
 
 
+
+
+
+
+void Baker_ui::Baker_ScreenTop(){
+
+
+cout << "      |  Order                                  | Status:  |" << endl;
+cout << "      |.........................................|..........|" << endl;
+
+}
+
+
+void Baker_ui::Baker_ScreenBottom(){
+
+
+cout << "      _____________________________________________________" << endl;
+cout << "              r: Mark ready   b:  back  q:  Quit          " << endl;
+
+}
+
+
+void Baker_ui::Baker_header(){
+cout <<   "      *******************************************************" << endl;
+cout <<   "      *                                                     *" << endl;
+cout <<   "      *             |A w e S o m e P i Z z A|               *" << endl;
+cout <<   "      *           -----------------------------             *" << endl;
+cout <<   "      *                                                     *" << endl;
+cout <<   "      *                                                     *" << endl;
+cout <<   "      *******************************************************" << endl;
+
+}
 string Baker_ui::get_mark_status(){
 
     return mark_status;
@@ -40,26 +73,22 @@ string Baker_ui::order_status(){
 void Baker_ui::Baker_menu(){
 
     char selection;
-
-    Baker_view menu;
+    system("CLS");
+    Baker_ui menu;
     menu.Baker_header();
     menu.Baker_ScreenTop();
-    Order order;
-    order.return_order_number();
+
+    BakerServices show;
+    show.readPizzas();
+
     menu.Baker_ScreenBottom();
+
+
     cin >> selection;
     if(selection == 'r')
     {
-        Baker_ui mark_order;
-        mark_order.order_status();
-        Baker_ui go_back;
-        go_back.Baker_menu();
-        string status;
-        Baker_ui check_status;
-        status = check_status.order_status();
-        menu.Baker_header();
-        cout << check_status.order_status();
-        menu.Baker_ScreenTop();
+
+
     }
     if (selection == 'b'){
         Main_ui back_to_main;
@@ -74,6 +103,5 @@ void Baker_ui::Baker_menu(){
 
 
 }
-
 
 

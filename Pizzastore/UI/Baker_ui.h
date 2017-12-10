@@ -14,6 +14,10 @@ class Baker_ui
         void Baker_menu();
         string get_mark_status();
         string order_status();
+        void Baker_header();
+        void Baker_ScreenTop();
+        void Baker_ScreenBottom();
+        void Status();
 
 
 

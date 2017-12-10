@@ -1,7 +1,11 @@
 #ifndef ORDER_H
 #define ORDER_H
-#include "string.h"
+
+#include <vector>
+#include <string>
 #include <iostream>
+#include <string.h>
+#include "Pizza.h"
 using namespace std;
 
 
@@ -9,23 +13,30 @@ class Order
 {
     public:
         Order();
-        Order(int order_number, double phone_number, string name, double price);
-        virtual ~Order();
+        Order(int order_number, string phone_number, string name, double price);
+
+        int get_order_number();
+        string get_phone_number();
+        string get_name();
+        double get_price();
+
+        void read_orders(ifstream& fin);
+        void write_orders(ofstream& fout) const;
+
+        void addPizza(Pizza pizza);
+
+        friend ostream& operator << (ostream& out, const Order& order);
+        friend istream& operator >> (istream& in, Order& order);
 
 
-        double return_phonenr();                            /// Símanúmer:
-        string return_customer_name();                     /// Nafn:
-        int return_order_number();                        /// pt á númeri
-        double return_price();                            /// Verð
-        double return_discount();                        /// Afsláttur ef á við.
 
     private:
 
-    double phone_number;
+    string phone_number;
     string name;
     int order_number;
     double price;
-    double discount;
+    vector<Pizza> pizzas;
 
 };
 

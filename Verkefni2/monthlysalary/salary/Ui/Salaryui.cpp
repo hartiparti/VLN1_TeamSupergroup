@@ -49,7 +49,7 @@ void Salaryui::mainui()
         else if(input == '2')
         {
             search_SSN();
-            get_all_records();
+            //get_all_records();
 
             cout << "Returning to main" << endl;
             system("PAUSE");
@@ -88,62 +88,32 @@ void Salaryui::PrintScreen(){
     cout << endl;
 }
 
-/*
-void Salaryui::Get_SSN(){
-
-    string temp;
-    cout << "Enter the SSN: ";
-    cin >> temp;
-
-    vector <Employee> list_of_ssn;
-    for(unsigned int i = 0; i < list_of_ssn.size(); i++)
-    {
-        cout << list_of_ssn[i];
-    }
 
 
-
-    vector <Employee> EmployeeServices::get_record_from_SSN(string input){
-
-    vector <Employee> list_of_records = employee_rep.read_record_from_file();  /// Vector sem les úr read_record
-    vector <Employee> find_ssn_record;                                         /// Annar vector til að fara í gegnum og "ná" kt
-
-
-    for(unsigned int i = 0; i < list_of_records.size(); i++){
-            if(list_of_records[i].get_kt() == input){
-                find_ssn_record.push_back(list_of_records[i]);
-                }
-    }
-
-    return find_ssn_record;
-}
-
-}
-*/
-
-void Salaryui::search_SSN(){                //// Virkar ekki.
+void Salaryui::search_SSN(){           //& Virkar eftir að const fór. af get_kt;
 
     string input = " ";
     cout << "Insert an SSN to look for records ";
     cin >> input;
     vector <Employee> list_from_input = Employeeserv_Read.get_record_from_SSN(input);
 
-    for(unsigned int i = 0; i < list_from_input.size(); i++)
-    {
-        cout << list_from_input[i];
-    }
+        for(unsigned int i = 0; i < list_from_input.size(); i++)
+        {
+            cout << list_from_input[i];
+        }
+
 
 }
 
 void Salaryui::get_all_records(){           /// Virkar.
 
     vector <Employee> records = Employeeserv_Read.print_all_records();
-    for(unsigned int i = 0; i < records.size(); i++){
+        for(unsigned int i = 0; i < records.size(); i++){
         cout << records[i];
     }
 }
 
-Employee Salaryui::create_record(){
+Employee Salaryui::create_record(){ ///Virkar
 
     string name, kt;
     double salary;

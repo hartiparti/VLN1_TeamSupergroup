@@ -19,6 +19,7 @@ class EmployeeServices
         EmployeeRepo employee_rep;
         bool isValidName(const Employee& employee);
         bool isValidSSN(const Employee& employee); // Ekki komið
+        bool isYearValid(const Employee& employee); // Ekki komið
 
 };
 

@@ -60,10 +60,11 @@ istream& operator >> (istream& in, Pizza& pizza){                    /// Hlaða i
 
 ostream& operator << (ostream& out, const Pizza& pizza){            /// prenta út Pizzu m toppings vector, ath en ekki í skrá, heldur bara á skjá.
 
-    out << "Pizza with toppings: ";
+    out << "        Pizza with toppings: ";
+    cout << endl;
     for(unsigned int i = 0; i < pizza.toppings.size(); i++){
 
-        out << pizza.toppings[i] << endl;
+        out << "            "   << pizza.toppings[i] << endl;
     }
     return out;
 

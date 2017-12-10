@@ -5,11 +5,7 @@ AdminServices::AdminServices()
 
 }
 
-/*void AdminServices::addTopping(Topping topping){
 
-    toppings.push_back(topping);
-}
-*/
 void AdminServices::readToppings(){                                             /// AdminService talar svo við Data_Access layer, sækir það sem er í Vectornum þar.
 
     vector<Topping> toppings = list_of_toppings.retriveToppings();

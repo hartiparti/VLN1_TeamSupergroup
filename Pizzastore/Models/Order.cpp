@@ -1,8 +1,8 @@
 #include "Order.h"
-#include "string.h"
+#include "fstream"
 
 /* Gerir ekkert ennþá */
-Order::Order(int order_number, double phone_number, string name, double price)
+Order::Order(int order_number, string phone_number, string name, double price)
 {
 
     this->order_number = order_number;
@@ -17,41 +17,101 @@ Order::Order(int order_number, double phone_number, string name, double price)
 
 Order::Order()
 {
-    name = "";
-    phone_number = 0.0;
+    name = " ";
+    phone_number = " ";
     order_number = 0;
     price = 0.0;
 
 }
 
-Order::~Order()
-{
-    //dtor
+
+void Order::addPizza(Pizza pizza){
+
+    pizzas.push_back(pizza);            /// Vectorinn tekur við toppings og bætir í.
+
 }
 
-double Order::return_phonenr(){
+string Order::get_phone_number(){
 
     return this->phone_number;
 }
 
-string Order::return_customer_name(){
+string Order::get_name(){
 
     return this->name;
 }
 
-int Order::return_order_number(){
+int Order::get_order_number(){
 
     return this->order_number;
 }
 
-double Order::return_price(){
+double Order::get_price(){
 
     return this->price;
 }
 
-double Order::return_discount(){
+void Order::write_orders(ofstream& fout) const{
 
-    return this->discount;
+    int string_length_name = name.length() + 1;
+    fout.write((char*)(&string_length_name), sizeof(int));
+    fout.write(name.c_str(), string_length_name);
+
+    int string_length_phone_number = phone_number.length() + 1;
+    fout.write((char*)(&string_length_phone_number), sizeof(int));
+    fout.write(phone_number.c_str(), string_length_phone_number);
+
+    fout.write((char*)(&price), sizeof(double));
+    fout.write((char*)(&order_number), sizeof(int));
+
+
 }
+
+void Order::read_orders(ifstream& fin){
+
+    int string_length_name = name.length();
+    fin.read((char*)(&string_length_name), sizeof(int));
+    char *str_temp1 = new char[string_length_name];       /// Kviklegt fylki af stærðinn stringLength
+    fin.read(str_temp1, string_length_name);
+    name = str_temp1;
+
+    int string_length_phone = phone_number.length();
+    fin.read((char*)(&string_length_phone), sizeof(int));
+    char *str_temp2 = new char[string_length_phone];
+    fin.read(str_temp2, string_length_phone);
+    phone_number = str_temp2;
+
+    fin.read((char*)(&price), sizeof(double));
+    fin.read((char*)(&order_number), sizeof(int));
+
+
+    delete[] str_temp1;          /// Ekki gleyma ad eyda.
+    delete[] str_temp2;
+
+}
+
+ostream& operator << (ostream& out, const Order& order){
+
+    cout << "Name: " << out << order.name << endl;
+    cout << "Phone number: "<<  out << order.phone_number << endl;
+    cout << endl;
+
+    return out;
+
+}
+
+istream& operator >> (istream& in, Order& order){
+    cout << "Name of customer: ";
+    in >> ws;
+    getline(in, order.name);     // Getline til að fá nafnið með whitespace
+    cout << "Phone number: ";
+    in >> order.phone_number;
+
+    return in;
+
+ }
+
+
+
 
 

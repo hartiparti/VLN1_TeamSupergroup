@@ -9,7 +9,12 @@ class Main_ui
         Main_ui();
         virtual ~Main_ui();
         void startUI();         /// Byjar forritid
+
         void printStart();
+        void WelcomeScreen();   /// Prentar welcome screen
+        void printVersion();    /// Prentar version af forritinu
+        void printHeader();    /// Prentar header
+        void printSelection();
 
 
     private:

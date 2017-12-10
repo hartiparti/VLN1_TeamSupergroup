@@ -59,8 +59,7 @@ istream& operator >> (istream& in, Topping& topping){
 
 ostream& operator << (ostream& out, const Topping& topping){
 
-    out <<"Topp:"<<"|" << topping.name << "|" <<" ";
-    out <<"Price:"<<"|"<< topping.price << "|" <<" Kr";
+    out <<" Topping: " << topping.name << "  " <<  " Price:" << topping.price << " Kr ";
 
     return out;
 

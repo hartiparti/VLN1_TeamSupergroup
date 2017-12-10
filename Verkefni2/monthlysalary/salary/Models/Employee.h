@@ -13,7 +13,7 @@ class Employee
         Employee(string name, string kt, double salary, int month, int year);
 
         string get_name() const;
-        string get_kt() const;
+        string get_kt();
         double get_salary() const;
         int get_month() const;
         int get_year() const;

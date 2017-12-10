@@ -13,7 +13,7 @@ EmployeeRepo::EmployeeRepo(){
 void EmployeeRepo::add_employee_to_file(const Employee& employee){
 
     ofstream fout;
-    fout.open("record.dat", ios::binary | ios:: app);
+    fout.open("record.dat", ios::binary | ios:: app |ios::out);
     employee.write_employees(fout);
     fout.close();
 
@@ -24,7 +24,7 @@ vector <Employee> EmployeeRepo::read_record_from_file(){
     vector <Employee> records;
 
     ifstream fin;
-    fin.open("record.dat", ios::binary);
+    fin.open("record.dat", ios::binary | ios::in);
     Employee employee;
 
         if(fin.is_open()) {

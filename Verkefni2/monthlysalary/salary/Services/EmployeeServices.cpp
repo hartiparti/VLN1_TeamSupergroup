@@ -45,34 +45,38 @@ vector <Employee> EmployeeServices::get_record_from_SSN(string input){
     return find_ssn_record;
 }
 
-
-
 /*
+bool EmployeeServices::isYearValid(const Employee& employee){
+
+        bool valid = true;
+        int month = employee.get_month;
+        if(!(month <= 0 && month => 12))
+        {
+            valid = false;
+        }
 
 
+        return true;
 
-
+}
+*/
+/*
 bool EmployeeServices::isValidSSN(const Employee& employee){    /// Virkar ekki...
 
-        string temp = employee.get_kt();
+        string check_kt = employee.get_kt();
+        for(unsigned int i = 0; i < check_kt().length(); i++){
+                //(!isdigit(temp)){
+                if(check_kt.size()) > 10){
 
-
-        for (unsigned int i = 0; i < temp.lenght(); i++)
-        {
-            if(temp.length(i) > 11){
-
-            throw (InvalidssnExceptions("Not a valid SSN"));
-            }
-        }
-        if((temp.size() > 4) && (!isdigit(temp)){
-        throw (InvalidssnExceptions("Not a valid SSN"));
+                    throw (InvalidssnExceptions("Not a valid SSN"));
+                }
         }
 
 
     return true;
 }
-*/
 
+*/
 bool EmployeeServices::isValidName(const Employee& employee){           /// Virkar.
         string name = employee.get_name();
         for (unsigned int i = 0; i < name.length(); i++){

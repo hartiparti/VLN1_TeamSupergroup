@@ -35,7 +35,7 @@ Employee::Employee(string name, string kt, double salary, int month, int year){
 
     fout.write((char*)(&salary), sizeof(double));
     fout.write((char*)(&month), sizeof(int));
-    fout.write((char*)(&year), sizeof(int));;
+    fout.write((char*)(&year), sizeof(int));
 
 
 }
@@ -72,7 +72,7 @@ string Employee::get_name()const{
 
     return this->name;
 }
-string Employee::get_kt()const{
+string Employee::get_kt(){
 
     return this->kt;
 }

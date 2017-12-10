@@ -1,6 +1,4 @@
-
 #include "AdminUI.h"
-#include "AdminView.h"
 #include "AdminServices.h"
 #include <stdlib.h>
 
@@ -8,6 +6,50 @@
 
 AdminUI::AdminUI(){
 
+
+}
+
+void AdminUI::adminscreen()
+{
+    system("CLS");
+    cout << endl << endl << endl;
+    cout << "                 ------------------------------------------------------------- " << endl;
+    cout << "                                   Administrator panel                         " << endl;
+    cout << "                                                                               " << endl;
+    cout << "                         Welcome, what would you like to do today?             " << endl;
+    cout << "                           ***********************************                 " << endl;
+    cout << "                             e: Edit menu items*NOT WORKING*                   " << endl;
+    cout << "                             t: Access the toppings page                       " << endl;
+    cout << "                             c: Create offer *NOT WORKING*                     " << endl;
+    cout << "                             a: Create offer *NOT WORKING*                     " << endl;
+    cout << "                             o: Access orders *NOT WORKING*                    " << endl;
+    cout << "                             b: logout                                         " << endl;
+    cout << endl;
+    cout << "                 ------------------------------------------------------------- " << endl;
+
+}
+
+void AdminUI::admin_ask_login(){
+    system("CLS");
+    cout << endl << endl << endl;
+    cout << "                       **************************************************" << endl;
+    cout << "                       *                   WARNING!                     *" << endl;
+    cout << "                       *    You must be an admin to access this page    *" << endl;
+    cout << "                       **************************************************" << endl;
+    cout << "                                   Type in password: ";
+
+}
+
+void AdminUI::edit_screen(){
+    system("CLS");
+    cout << endl << endl << endl;
+    cout << "                                   Access toppings                             " << endl;
+    cout << "                           ***********************************                 " << endl;
+    cout << "                             r: read current list of toppings                  " << endl;
+    cout << "                             a: add toppings to system                         " << endl;
+    cout << "                             b: go back                                        " << endl;
+    cout << "                           ***********************************                 " << endl;
+    cout << endl;
 
 }
 
@@ -32,7 +74,7 @@ void AdminUI::administrate(){                                       /// Þarf að 
     char input;
     cin >> input;
     if (input == 't'){
-        AdminView printedit;                                       /// Kalla í view föllinn, sem eru eiginlega bara "cout" útlits setningar.
+        AdminUI printedit;                                       /// Kalla í view föllinn, sem eru eiginlega bara "cout" útlits setningar.
         printedit.edit_screen();
          char input_2;
          cin >> input_2;

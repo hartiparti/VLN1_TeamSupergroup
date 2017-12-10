@@ -17,7 +17,7 @@ Pizzarepo::~Pizzarepo()
 void Pizzarepo::storePizza(const Pizza& pizza){
 
     ofstream fout;
-    fout.open("pizzas.bin", ios::binary);
+    fout.open("pizzas.bin", ios::binary | ios::app);
 
     pizza.write(fout);
 

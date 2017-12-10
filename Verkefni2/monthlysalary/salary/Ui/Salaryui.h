@@ -16,7 +16,7 @@ class Salaryui
 
     private:
         Employee create_record();
-        Employee read_records();
+
         EmployeeServices EmployeeServ_Write;
         EmployeeServices Employeeserv_Read;
 

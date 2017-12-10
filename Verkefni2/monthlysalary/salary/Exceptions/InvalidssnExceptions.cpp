@@ -5,7 +5,7 @@ InvalidssnExceptions::InvalidssnExceptions(string message){
 
 }
 
-string InvalidssnExceptions::get_message(){
+string InvalidssnExceptions::get_message(
 
     return this->message;
 }
