@@ -1,0 +1,12 @@
+Pizza
+1000
+3Pepperoni
+200
+Skinka
+300
+Ananas
+4002
+Pizza
+1000
+1Skinka
+300

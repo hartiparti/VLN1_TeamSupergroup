@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PizzaStore" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PizzaStore" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="Repo" />
+					<Add directory="Model" />
+					<Add directory="UI" />
+					<Add directory="Services" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PizzaStore" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="Repo" />
+					<Add directory="Model" />
+					<Add directory="UI" />
+					<Add directory="Services" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Model/Order.cpp" />
+		<Unit filename="Model/Order.h" />
+		<Unit filename="Model/Pizza.cpp" />
+		<Unit filename="Model/Pizza.h" />
+		<Unit filename="Model/Topping.cpp" />
+		<Unit filename="Model/Topping.h" />
+		<Unit filename="Repo/OrderRepo.cpp" />
+		<Unit filename="Repo/OrderRepo.h" />
+		<Unit filename="Repo/PizzaRepo.cpp" />
+		<Unit filename="Repo/PizzaRepo.h" />
+		<Unit filename="Repo/ToppingRepo.cpp" />
+		<Unit filename="Repo/ToppingRepo.h" />
+		<Unit filename="Services/AdminServices.cpp" />
+		<Unit filename="Services/AdminServices.h" />
+		<Unit filename="Services/BakerServices.cpp" />
+		<Unit filename="Services/BakerServices.h" />
+		<Unit filename="Services/OrderServices.cpp" />
+		<Unit filename="Services/OrderServices.h" />
+		<Unit filename="UI/AdminUI.cpp" />
+		<Unit filename="UI/AdminUI.h" />
+		<Unit filename="UI/BakerUI.cpp" />
+		<Unit filename="UI/BakerUI.h" />
+		<Unit filename="UI/MainUI.cpp" />
+		<Unit filename="UI/MainUI.h" />
+		<Unit filename="UI/OrderScreenUI.cpp" />
+		<Unit filename="UI/OrderScreenUI.h" />
+		<Unit filename="UI/RegisterUI.cpp" />
+		<Unit filename="UI/RegisterUI.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
