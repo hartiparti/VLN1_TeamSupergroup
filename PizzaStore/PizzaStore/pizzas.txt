@@ -14,3 +14,11 @@ Pizza
 1000
 1Skinka
 300
+Pizza
+1000
+1Skinka
+300
+Pizza
+1000
+1Pepperoni
+200

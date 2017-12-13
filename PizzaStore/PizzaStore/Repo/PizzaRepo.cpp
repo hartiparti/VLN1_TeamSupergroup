@@ -40,4 +40,34 @@ vector<Pizza>PizzaRepo::retriveAllPizzasfromfile()
     return vector_of_pizzas;
 }
 
+void PizzaRepo::storePizzaToMenu(Pizza pizza)
+{
+    ofstream fout;
+    fout.open("menuOfPizzas.txt", ios::app);
+    if(fout.is_open())
+    {
+        fout << pizza;
+        fout.close();
+    }
+}
+
+vector<Pizza> PizzaRepo::retivePizzaFromMenu()
+{
+    vector<Pizza> myMenuPizzas;
+    ifstream fin;
+    fin.open("menuOfPizzas.txt");
+
+    if(fin.is_open())
+    {
+        Pizza p;
+        while(fin >> p){
+            myMenuPizzas.push_back(p);
+        }
+        fin.close();
+    }
+
+    return myMenuPizzas;
+}
+
+
 

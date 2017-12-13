@@ -15,6 +15,8 @@ class PizzaRepo
         PizzaRepo();
 
         void addPizzasTofile(Pizza pizza);
+        void storePizzaToMenu(Pizza pizza);
+        vector<Pizza> retivePizzaFromMenu();
 
         vector<Pizza> retriveAllPizzasfromfile();
 

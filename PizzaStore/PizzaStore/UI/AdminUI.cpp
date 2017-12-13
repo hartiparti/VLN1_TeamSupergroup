@@ -81,6 +81,60 @@ void AdminUI::Administrate()
         MainUI goBack;
         goBack.startUI();
     }
+    else if(input == 'p')
+    {
+        cout << "Add new Pizza to menu" << endl;
+        string name;
+        cout << "Name: ";
+        cin >> name;
+        double price;
+        cout << "Price: ";
+        cin >> price;
+
+        unsigned int toppingCount;
+        cout << "How many toppings? ";
+        cin >> toppingCount;
+        vector<Topping> toppings;
+        // TODO: Instead custom Toppings get avalable toppings
+
+        for(int i = 0; i < toppingCount; i++)
+        {
+            string toppingName;
+            cout << "Topping nr. " << i << endl;
+            cout << "\tName: ";
+            cin >> toppingName;
+
+            double toppingPrice;
+            cout << "\tPrice: ";
+            cin >> toppingPrice;
+            Topping newTopping(toppingName, toppingPrice);
+            toppings.push_back(newTopping);
+        }
+        Pizza pizza(name, price, toppings.size(), toppings);
+
+        // TODO> In stanicate in Cunstructor
+        PizzaService pizzaService;
+        try
+        {
+            pizzaService.addPizzaToMenu(pizza);
+        }
+        catch(exception ex)
+        {
+            cout << "Unable to add Pizza to Repository" << endl;
+        }
+
+    }
+    else if(input == 'l')
+    {
+        PizzaService pizzaService;
+        vector<Pizza> myMenuPizzas =  pizzaService.getPizzasFromMenu();
+        for(int i = 0; i < myMenuPizzas.size(); i++){
+            cout << "Pizza nr. " << i+1 << endl;
+            cout << myMenuPizzas.at(i).getName() << " Price: " << myMenuPizzas.at(i).getPrice() << endl;
+
+        }
+        cout << endl;
+    }
     else
     {
         cout << "invalid input";

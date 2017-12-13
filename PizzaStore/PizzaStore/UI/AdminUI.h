@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include "AdminServices.h"
 #include "MainUI.h"
+#include "PizzaService.h"
 
 class AdminUI
 {
