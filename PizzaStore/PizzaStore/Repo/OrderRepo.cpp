@@ -5,19 +5,16 @@ OrderRepo::OrderRepo()
     //ctor
 }
 
-
 void OrderRepo::addOrderTofile(Order order)
 {
     ofstream fout;
     fout.open("orders.txt", ios::app);
     fout << order;
     fout.close();
-
 }
 
 vector <Order> OrderRepo::retriveAllOrders()
 {
-
     vector<Order> orders;
     ifstream fin;
     fin.open("orders.txt");
@@ -31,16 +28,12 @@ vector <Order> OrderRepo::retriveAllOrders()
             orders.push_back(t);
             counter++;
         }
-
     }
     else
     {
         cout << "Error";
-
     }
-
     fin.close();
 
     return orders;
-
 }

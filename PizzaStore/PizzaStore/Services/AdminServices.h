@@ -11,10 +11,9 @@ class AdminServices
 {
     public:
         AdminServices();
+
         void displayAllToppings();
         void addToToppings();
-
-
 
     private:
         ToppingRepo toppingrepo;

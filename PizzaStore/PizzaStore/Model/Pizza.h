@@ -27,7 +27,6 @@ class Pizza
         friend ofstream& operator << (ofstream& fout, const Pizza& pizza);
 
     private:
-
         string name;
         double price;
         int toppingsCount;

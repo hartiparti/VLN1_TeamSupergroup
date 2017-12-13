@@ -13,7 +13,6 @@ class Topping
         Topping();
         Topping(string name, double price);
 
-
         string getName();
         double getPrice();
 
@@ -22,7 +21,6 @@ class Topping
 
         friend ifstream&  operator >> (ifstream& in, Topping& topping);
         friend ofstream&  operator << (ofstream& out, const Topping& topping);
-
 
     private:
         int nameLength;

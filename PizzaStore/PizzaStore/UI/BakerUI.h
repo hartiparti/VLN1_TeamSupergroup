@@ -7,7 +7,6 @@
 
 #include <stdlib.h>
 
-
 class BakerUI
 {
     public:

@@ -15,7 +15,6 @@ class RegisterUI
         void printRegisterMenu();
         void RegisterMenu();
 
-
     private:
 };
 

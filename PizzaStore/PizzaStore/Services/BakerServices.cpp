@@ -21,6 +21,4 @@ void BakerServices::showAllPizzas()
         cout << "Price: " <<    pizza.getPrice() << endl;
         cout << endl;
     }
-
-
  }

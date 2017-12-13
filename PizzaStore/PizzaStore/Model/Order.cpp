@@ -23,7 +23,6 @@ void Order::setOrderNumber(int orderNumber)
 string Order::getCustomerName()
 {
     return customerName;
-
 }
 
 void Order::setCustomerName(string name)
@@ -34,7 +33,6 @@ void Order::setCustomerName(string name)
 string Order::getCustomerPhoneNumber()
 {
     return customerPhoneNumber;
-
 }
 
 void Order::setCustomerPhoneNumber(string customerPhoneNumber)
@@ -45,7 +43,6 @@ void Order::setCustomerPhoneNumber(string customerPhoneNumber)
 vector<Pizza> Order::getPizzas()
 {
     return pizzas;
-
 }
 
 void Order::setPizzaCount(int numberOfPizzas)
@@ -61,7 +58,6 @@ void Order::setPizzas(vector<Pizza> pizzas)
 double Order::getTotalPrice()
 {
     return totalPrice;
-
 }
 
 void Order::setTotalPrice(double price)

@@ -18,16 +18,14 @@
 #include <iostream>
 using namespace std;
 
-
 class OrderServices
 {
     public:
         OrderServices();
+
         vector <Pizza> makePizza();
+
         void makeOrder();
-
-
-
 
     private:
 

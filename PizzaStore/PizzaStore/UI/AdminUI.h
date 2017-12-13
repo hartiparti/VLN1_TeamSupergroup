@@ -5,8 +5,6 @@
 #include "AdminServices.h"
 #include "MainUI.h"
 
-
-
 class AdminUI
 {
     public:

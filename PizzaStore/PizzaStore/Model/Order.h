@@ -33,7 +33,6 @@ class Order
         double getTotalPrice();
         void setTotalPrice(double price);
 
-
         friend ifstream& operator >> (ifstream& fin, Order& order);
         friend ofstream& operator << (ofstream& fout, const Order& order);
 

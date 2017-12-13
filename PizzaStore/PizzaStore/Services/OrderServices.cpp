@@ -2,7 +2,7 @@
 
 OrderServices::OrderServices()
 {
-    //ctor
+
 }
 
 void OrderServices::makeOrder(){
@@ -29,8 +29,8 @@ void OrderServices::makeOrder(){
 
     double totalCost = 0;
 
-    for(int i = 0; i < numberOfPizzas; i++){
-
+    for(int i = 0; i < numberOfPizzas; i++)
+    {
         pizzas.push_back(nextPizza);
         totalCost += nextPizza.getPrice();
     }
@@ -69,7 +69,6 @@ vector <Pizza> OrderServices::makePizza()
     {
         Topping topping = toppings.at(i);
         cout << "[" << i + 1 << "]" << topping.getName() << " " << topping.getPrice() << " Kr " << endl;
-
     }
 
     int tCount = 0;

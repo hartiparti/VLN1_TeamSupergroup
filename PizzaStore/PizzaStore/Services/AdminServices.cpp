@@ -39,7 +39,6 @@ void AdminServices::addToToppings()
 
     for(int i = 0; i < add_to_topping; i++)
     {
-
         string Name;
         double Price;
         cout << "Name: ";
@@ -54,5 +53,4 @@ void AdminServices::addToToppings()
     }
 
     toppingrepo.storeAllToppings(toppings);
-
 }

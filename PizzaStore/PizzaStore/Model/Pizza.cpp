@@ -4,7 +4,7 @@ using namespace std;
 
 Pizza::Pizza()
 {
-    //ctor
+
 }
 
 Pizza::Pizza(string name, double price, int toppingsCount, vector<Topping> toppings)
@@ -17,27 +17,21 @@ Pizza::Pizza(string name, double price, int toppingsCount, vector<Topping> toppi
 
 string Pizza::getName()
 {
-
     return this-> name;
-
 }
 
 double Pizza::getPrice()
 {
-
     return this->price;
-
 }
 
 void Pizza::setName(string name)
 {
-
     this->name = name;
-
 }
 
-void Pizza::setPrice(double price){
-
+void Pizza::setPrice(double price)
+{
     this->price = price;
 }
 
@@ -45,7 +39,6 @@ void Pizza::addTopping(Topping topping)
 {
     toppings.push_back(topping);
 }
-
 
 ifstream& operator >> (ifstream& fin, Pizza& pizza)
 {

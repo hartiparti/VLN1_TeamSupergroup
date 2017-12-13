@@ -13,12 +13,11 @@ class BakerServices
 {
     public:
         BakerServices();
+
         void showAllPizzas();
 
-
-
     private:
-    PizzaRepo pizzarepo;
+        PizzaRepo pizzarepo;
 };
 
 #endif // BAKERSERVICES_H
