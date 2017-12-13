@@ -5,93 +5,67 @@ OrderServices::OrderServices()
 
 }
 
+
+
+void OrderServices::addOrdersToFile(Order order)
+{
+   OrderRepo orderRepo;
+   orderRepo.storeOrderToFile(order);
+
+   /* if( isValid(Order)){
+        pizzaRepo.storePizzaToMenu(pizza);
+    }*/
+}
+
+
 void OrderServices::makeOrder(){
 
-    int numberOfPizzas;
-    string name, phoneNumber;
+    cout << "Welcome please make an order: " << endl;
+    vector<Order> newOrders;
+    string name;
+    string phonenumber;
+    double price = 0.0;
 
-    cout << "Enter how many pizzas you want to order: ";
-    cin >> numberOfPizzas;
-    cout << "Enter Name: ";
+    cout << "Name: ";
     cin >> name;
-    cout << "Enter Phone number: ";
-    cin >> phoneNumber;
+    cout << "Phonenumber: ";
+    cin >> phonenumber;
 
-    order.setPizzaCount(numberOfPizzas);
-    order.setCustomerName(name);
-    order.setCustomerPhoneNumber(phoneNumber);
+    unsigned int PizzaCount;
+    cout << "How many pizzas? ";
 
-    int orderNumber = 0;
-    order.setOrderNumber(orderNumber);
-
-    vector<Pizza> pizzas = makePizza();
-    Pizza nextPizza;
-
-    double totalCost = 0;
-
-    for(int i = 0; i < numberOfPizzas; i++)
+    cin >> PizzaCount;
+    for (int i = 0; i < PizzaCount; i++)
     {
-        pizzas.push_back(nextPizza);
-        totalCost += nextPizza.getPrice();
+
+        pizzaservice.makePizza();
+    //vector<Order> newOrders = pizzaService.make
     }
 
-    order.setPizzas(pizzas);
-    order.setTotalPrice(totalCost);
+    try
+    {
+            //addOrdersToFile(Order order)(order);
+    }
 
-    system("CLS");
-    cout << "This is your order" << endl;
-
-    cout << "------------------" << endl;
-
-
-    cout << "-------------------" << endl;
-    cout << "Total price: " << order.getTotalPrice() << endl;
-
-    system("Pause");
-
-    orderrepo.addOrderTofile(order);
+    catch(exception ex)
+    {
+        cout << "Unable to add Pizza to Repository" << endl;
+    }
 
 }
 
 
 
-vector <Pizza> OrderServices::makePizza()
-{
-    vector <Pizza> Ordered_Pizza;
 
-    string name = "Pizza";
-    double price = 1000;
 
-    vector <Topping> selectedToppings;
 
-    vector <Topping> toppings = toppingrepo.retriveAllToppings();
-    for(unsigned int i = 0; i < toppings.size(); i++)
-    {
-        Topping topping = toppings.at(i);
-        cout << "[" << i + 1 << "]" << topping.getName() << " " << topping.getPrice() << " Kr " << endl;
-    }
 
-    int tCount = 0;
-    int input = 0;
-    cout << endl;
 
-    cout << " Insert how many toppings you want on the pizza: " << endl;
 
-    cin >> tCount;
-    for (unsigned int i = 0; i < tCount; i++)
-    {
-        cin >> input;
-        Topping topping = toppings.at(input - 1);
-        cout << "Name: " << topping.getName() << " " << "Price: " << topping.getPrice() << endl;
 
-        selectedToppings.push_back(topping);
-    }
 
-        Pizza make_pizza(name, price, tCount, selectedToppings);
-        pizzarepo.addPizzasTofile(make_pizza);
 
-        return Ordered_Pizza;
-}
+
 
 
 

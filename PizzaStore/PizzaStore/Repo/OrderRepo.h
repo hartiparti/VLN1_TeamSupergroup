@@ -15,8 +15,9 @@ class OrderRepo
     public:
         OrderRepo();
 
-        void addOrderTofile(Order order);
+        void storeOrderToFile(Order order);
 
+        vector <Order> listOfNewOrders();
         vector <Order> retriveAllOrders();
 
     private:

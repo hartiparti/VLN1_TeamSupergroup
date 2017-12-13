@@ -7,3 +7,5 @@ Ananas
 200
 auka2
 200
+1pepperoni
+200

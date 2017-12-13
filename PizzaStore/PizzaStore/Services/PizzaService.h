@@ -8,6 +8,9 @@
 
 #include "Pizza.h"
 #include "PizzaRepo.h"
+#include "ToppingRepo.h"
+
+
 
 using namespace std;
 
@@ -15,14 +18,16 @@ class PizzaService
 {
     public:
         PizzaService();
-        virtual ~PizzaService();
+        vector <Pizza> makePizza();
+
         void addPizzaToMenu(Pizza pizza);
         vector<Pizza> getPizzasFromMenu();
 
-    protected:
-
     private:
         bool isValid(Pizza pizza);
+        ToppingRepo toppingrepo;
+        PizzaRepo pizzarepo;
+
 };
 
 #endif // PIZZASERVICE_H

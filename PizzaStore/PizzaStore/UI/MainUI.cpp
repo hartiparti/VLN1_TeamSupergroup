@@ -68,7 +68,7 @@ void MainUI::startUI()
     BakerUI bakerUI;
     OrderScreenUI orderScreenUI;
     RegisterUI registerUI;
-   //egisterUI registerUI;
+
 
     char input = '\0';
     while(input != 'q')
@@ -80,7 +80,6 @@ void MainUI::startUI()
         switch(input)
         {
             case '1':
-                    adminUI.printAdminScreen();
                     adminUI.Administrate();
                     break;
 

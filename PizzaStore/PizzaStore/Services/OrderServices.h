@@ -9,11 +9,13 @@
 
 #include "ToppingRepo.h"
 #include "PizzaRepo.h"
+#include "OrderRepo.h"
 
 #include "Order.h"
 #include "Topping.h"
 #include "ToppingRepo.h"
-#include "OrderRepo.h"
+#include "PizzaService.h"
+
 #include <vector>
 #include <iostream>
 using namespace std;
@@ -24,11 +26,12 @@ class OrderServices
         OrderServices();
 
         vector <Pizza> makePizza();
+        void addOrdersToFile(Order order);
 
         void makeOrder();
 
     private:
-
+        PizzaService pizzaservice;
         ToppingRepo toppingrepo;
         PizzaRepo pizzarepo;
         Order order;
