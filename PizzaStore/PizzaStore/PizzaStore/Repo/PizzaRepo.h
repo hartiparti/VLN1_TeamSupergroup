@@ -13,11 +13,15 @@ class PizzaRepo
 {
     public:
         PizzaRepo();
+        /// Föll sem við erum að nota.
+        void addPizzasToNewOrder(Pizza pizza);
+        vector <Pizza>retrivePizzaForOrder();
 
-        void addPizzasTofile(Pizza pizza);
+        /// Föll fyrir menu.
         void storePizzaToMenu(Pizza pizza);
         vector<Pizza> retivePizzaFromMenu();
-
+        /// Föll ef við viljum skrifa pizza í skrá.
+        void addPizzasTofile(Pizza pizza);
         vector<Pizza> retriveAllPizzasfromfile();
 
     private:

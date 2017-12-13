@@ -33,7 +33,6 @@ void OrderScreenUI::printOrderPizza()
     cout << endl;
 }
 
-
 void OrderScreenUI::OrderMenu()
 {
         system("CLS");
@@ -43,9 +42,10 @@ void OrderScreenUI::OrderMenu()
         char selection;
         cin >> selection;
             if (selection == 'o')
-            {   system("CLS");
+            {
+                system("CLS");
                 printOrderPizza();
-                orderService.makeOrder();
+                orderService.MakeOrder();
 
             }
             else if (selection == 'b')

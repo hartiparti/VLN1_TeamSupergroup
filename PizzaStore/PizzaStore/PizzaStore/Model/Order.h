@@ -14,6 +14,7 @@ class Order
 {
     public:
         Order();
+        Order(int orderNumber, string customerName, string customerPhoneNumber, int pizzaCount, double totalPrice, vector<Pizza> pizzas);
 
         int getOrderNumber();
         void setOrderNumber(int orderNumber);

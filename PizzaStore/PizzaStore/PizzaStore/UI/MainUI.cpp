@@ -87,8 +87,8 @@ void MainUI::startUI()
                     bakerUI.BakerMenu();
                     break;
             case '3':
-                     registerUI.RegisterMenu();
-                     break;
+                    registerUI.RegisterMenu();
+                    break;
             case '4':
                     orderScreenUI.OrderMenu();
                     break;

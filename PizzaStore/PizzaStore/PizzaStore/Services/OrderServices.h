@@ -23,19 +23,18 @@ using namespace std;
 class OrderServices
 {
     public:
+
         OrderServices();
+        void addNewOrdersToFile(Order order);
+        void MakeOrder();
 
-        vector <Pizza> makePizza();
-        void addOrdersToFile(Order order);
-
-        void makeOrder();
 
     private:
-        PizzaService pizzaservice;
-        ToppingRepo toppingrepo;
-        PizzaRepo pizzarepo;
+        PizzaService pizzaService;
+        PizzaRepo pizzaRepo;
         Order order;
-        OrderRepo orderrepo;
+        OrderRepo orderRepo;
+
 };
 
 #endif // ORDERSERVICES_H

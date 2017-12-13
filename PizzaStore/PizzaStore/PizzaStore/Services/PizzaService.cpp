@@ -9,7 +9,7 @@ PizzaService::PizzaService()
 
 vector <Pizza> PizzaService::makePizza()
 {
-    vector <Pizza> Ordered_Pizza;
+    vector <Pizza> NewPizza;
 
     string name = "Pizza";
     double price = 1000;
@@ -42,9 +42,9 @@ vector <Pizza> PizzaService::makePizza()
     }
 
         Pizza make_pizza(name, price, tCount, selectedToppings);
-        pizzarepo.addPizzasTofile(make_pizza);
+        pizzarepo.addPizzasToNewOrder(make_pizza);
 
-        return Ordered_Pizza;
+        return NewPizza;;
 }
 
 
@@ -64,6 +64,12 @@ vector<Pizza> PizzaService::getPizzasFromMenu(){
 }
 
 
+vector <Pizza> PizzaService::retrivePizzaForOrder()
+{
+    PizzaRepo pizzaRepo;
+    return pizzaRepo.retrivePizzaForOrder();
+
+}
 // TODO
 bool PizzaService::isValid(Pizza pizza){
     return true;

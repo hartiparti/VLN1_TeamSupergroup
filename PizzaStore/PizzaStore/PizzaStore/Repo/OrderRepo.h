@@ -15,10 +15,12 @@ class OrderRepo
     public:
         OrderRepo();
 
+        void storeNewOrderToFile(Order order);
+        vector <Order> getlistOfNewOrders();
+        ///Auka föll
         void storeOrderToFile(Order order);
+        void StoreAllOrdersToFile(vector<Order> &orders);
 
-        vector <Order> listOfNewOrders();
-        vector <Order> retriveAllOrders();
 
     private:
 

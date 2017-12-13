@@ -4,6 +4,36 @@ PizzaRepo::PizzaRepo()
 {
 
 }
+///Það sem við erum að nota.
+void PizzaRepo::addPizzasToNewOrder(Pizza pizza)
+{
+    ofstream fout;
+    fout.open("PizzaForOrder.txt");
+
+    fout << pizza;
+
+    fout.close();
+}
+///Erum að nota til að sækja pizza fyrir order.
+vector <Pizza> PizzaRepo::retrivePizzaForOrder(){
+
+    vector<Pizza> PizzaForOrder;
+    ifstream fin;
+    fin.open("PizzaForOrder.txt");
+
+    if(fin.is_open())
+    {
+        Pizza p;
+        while(fin >> p){
+            PizzaForOrder.push_back(p);
+        }
+        fin.close();
+    }
+
+    return PizzaForOrder;
+}
+
+/// Auka föll, til að adda t.d pizzu.
 
 void PizzaRepo::addPizzasTofile(Pizza pizza)
 {
@@ -14,7 +44,7 @@ void PizzaRepo::addPizzasTofile(Pizza pizza)
 
     fout.close();
 }
-
+/// Auka fall til að sækja allar pizzur.
 vector<Pizza>PizzaRepo::retriveAllPizzasfromfile()
 {
    vector <Pizza> vector_of_pizzas;
@@ -23,12 +53,12 @@ vector<Pizza>PizzaRepo::retriveAllPizzasfromfile()
     fin.open("pizzas.txt");
     if(fin.is_open())
     {
-        int counter = 0;
+
         Pizza p;
         while(fin >> p)
         {
             vector_of_pizzas.push_back(p);
-            counter++;
+
         }
     }
     else
@@ -39,7 +69,7 @@ vector<Pizza>PizzaRepo::retriveAllPizzasfromfile()
     fin.close();
     return vector_of_pizzas;
 }
-
+/// Auka fall til að geyma pizzur.
 void PizzaRepo::storePizzaToMenu(Pizza pizza)
 {
     ofstream fout;
@@ -68,6 +98,7 @@ vector<Pizza> PizzaRepo::retivePizzaFromMenu()
 
     return myMenuPizzas;
 }
+
 
 
 

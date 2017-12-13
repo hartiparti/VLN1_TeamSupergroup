@@ -4,18 +4,21 @@ ToppingRepo::ToppingRepo()
 {
 
 }
-
+/// Óþarfa fall
+/*
 void ToppingRepo::addToToppings(Topping &topping)
 {
     vector<Topping> toppingList = retriveAllToppings();
     toppingList.push_back(topping);
     storeAllToppings(toppingList);
 }
+*/
 
+///Föll sem við erum að nota.
 void ToppingRepo::storeAllToppings(vector<Topping> &toppings)
 {
     ofstream fout;
-    fout.open("topping.txt", ios::app);
+    fout.open("topping.txt",ios::app);
     fout << toppings.size();
     for(unsigned int i = 0; i < toppings.size(); i++)
     {
@@ -32,12 +35,12 @@ vector<Topping> ToppingRepo::retriveAllToppings()
 
     if(fin.is_open())
     {
-        int counter = 0; //ERROR CHEACK
+
         Topping t;
         while(fin >> t)
         {
             toppings.push_back(t);
-            counter++;
+
         }
 
     }
@@ -52,25 +55,3 @@ vector<Topping> ToppingRepo::retriveAllToppings()
     return toppings;
 }
 
-
-/*
-{   vector<Topping> toppings;
-
-    ifstream fin;
-    fin.open("topping.txt");
-
-    if(fin.is_open())
-    {
-        fin >> toppingCount; //ERROR CHEACK
-        for(int i = 0; i < toppingCount; i++)
-        {
-            Topping t;
-            fin >> t;
-            toppings.push_back(t);
-        }
-    }
-
-    fin.close();
-
-    return toppings;
-}*/

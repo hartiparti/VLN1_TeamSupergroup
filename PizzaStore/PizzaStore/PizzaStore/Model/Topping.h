@@ -23,7 +23,7 @@ class Topping
         friend ofstream&  operator << (ofstream& out, const Topping& topping);
 
     private:
-        int nameLength;
+
         string name;
         double price;
 };

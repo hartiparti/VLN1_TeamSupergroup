@@ -6,6 +6,7 @@
 #include <fstream>
 #include <vector>
 
+#include "PizzaService.h"
 #include "Pizza.h"
 #include "PizzaRepo.h"
 #include "ToppingRepo.h"
@@ -23,10 +24,13 @@ class PizzaService
         void addPizzaToMenu(Pizza pizza);
         vector<Pizza> getPizzasFromMenu();
 
+        vector <Pizza> retrivePizzaForOrder();
+
     private:
         bool isValid(Pizza pizza);
         ToppingRepo toppingrepo;
         PizzaRepo pizzarepo;
+
 
 };
 

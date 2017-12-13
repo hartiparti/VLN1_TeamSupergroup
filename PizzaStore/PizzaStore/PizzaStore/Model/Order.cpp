@@ -10,6 +10,17 @@ Order::Order(){
     totalPrice = 0;
 }
 
+Order::Order(int orderNumber, string customerName, string customerPhoneNumber, int pizzaCount, double totalPrice, vector<Pizza> pizzas)
+{
+    this->orderNumber = orderNumber;
+    this->customerName = customerName;
+    this->customerPhoneNumber = customerPhoneNumber;
+    this->pizzaCount= pizzaCount;
+    this->totalPrice = totalPrice;
+    this->pizzas = pizzas;
+
+
+}
 int Order::getOrderNumber()
 {
     return orderNumber;

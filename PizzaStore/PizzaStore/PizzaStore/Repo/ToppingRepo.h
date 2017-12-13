@@ -13,9 +13,10 @@ class ToppingRepo
     public:
         ToppingRepo();
 
-        void addToToppings(Topping &topping);
-        void storeAllToppings(vector<Topping> &toppings);
+        ///Auka fall
+        ///void addToToppings(Topping &topping);
 
+        void storeAllToppings(vector<Topping> &toppings);
         vector<Topping> retriveAllToppings();
 
 
