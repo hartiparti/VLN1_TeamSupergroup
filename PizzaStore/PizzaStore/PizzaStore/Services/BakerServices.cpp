@@ -5,29 +5,35 @@ BakerServices::BakerServices()
     //ctor
 }
 
-vector<Order> BakerServices::getlistOfNewOrders()
+
+
+void BakerServices::showMenuPizzas()
+ {
+    PizzaService pizzaService;
+    vector<Pizza> myMenuPizzas =  pizzaService.getPizzasFromMenu();
+    for(int i = 0; i < myMenuPizzas.size(); i++)
+    {
+        cout << "Pizza nr. " << i+1 << endl;
+        cout << myMenuPizzas.at(i).getName() << " Price: " << myMenuPizzas.at(i).getPrice() << endl;
+
+
+    }
+ }
+void BakerServices::showNewOrderPizzas()
 {
-    OrderRepo orderRepo;
-    return orderRepo.getlistOfNewOrders();
+    vector <Pizza> ListOfPizzas = pizzaRepo.retriveAllPizzasfromfile();
+    if (ListOfPizzas.size() == 0)
+    {
+        cout << "No new orders!";
+    }
+    for (unsigned int i = 0; i < ListOfPizzas.size(); i++)
+    {
+        cout << "Pizza nr. " << i+1 << endl;
+        cout << ListOfPizzas.at(i).getName() << " Price: " << ListOfPizzas.at(i).getPrice() << endl;
+
+    }
+
 }
 
-void BakerServices::showAllPizzas()
- {
-    vector <Order> showOrders = getlistOfNewOrders();
-    if (showOrders.size() == 0 )
-    {
-        cout << "no!";
-    }
-    for (unsigned int i = 0; i < showOrders.size(); i++)
-    {
-        Order order = showOrders.at(i);
-        cout << "Pizza nr. " << i+1 << endl;
-        cout << "Name: " << order.getCustomerName();
-        system("PAUSE");
-    }
-
-
-
- }
 
 

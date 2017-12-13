@@ -9,28 +9,26 @@ void OrderScreenUI::printOrderMenu()
 {
     system("CLS");
     cout << endl << endl << endl;
-    cout << "                 ------------------------------------------------------------- " << endl;
-    cout << "                                   Make order panel                            " << endl;
-    cout << "                                                                               " << endl;
-    cout << "                         Welcome, what would you like to do today?             " << endl;
-    cout << "                           ***********************************                 " << endl;
-    cout << "                             o: make an new order                              " << endl;
-    cout << "                             b: go back                                        " << endl;
+    cout << "                 -------------------------------------------------------------         " << endl;
+    cout << "                                   Make order panel                                    " << endl;
+    cout << "                                 *********************                                 " << endl;
+    cout << "                                  o: make an new order                                 " << endl;
     cout << endl;
-    cout << "                 ------------------------------------------------------------- " << endl;
+    cout << "                                  b: go back                                           " << endl;
+    cout << endl;
+    cout << "                                 *********************                                 " << endl;
+    cout << "                 -------------------------------------------------------------         " << endl;
+
 
 }
 
 
 void OrderScreenUI::printOrderPizza()
 {
-    cout << "                           ***********************************                         " << endl;
-    cout << "                                   List of all toppings                                " << endl;
-    cout << endl;
-    cout << "                                   Base price is 1000 Kr.                              " << endl;
-    cout << endl;
-
-    cout << endl;
+    cout << endl << endl << endl;
+    cout << "                                  Make a new order                                     " << endl;
+    cout << "                                 *********************                                 " << endl;
+    cout << "                             Base price for a pizza is 1000 Kr.                        " << endl;
 }
 
 void OrderScreenUI::OrderMenu()
@@ -46,7 +44,6 @@ void OrderScreenUI::OrderMenu()
                 system("CLS");
                 printOrderPizza();
                 orderService.MakeOrder();
-
             }
             else if (selection == 'b')
             {

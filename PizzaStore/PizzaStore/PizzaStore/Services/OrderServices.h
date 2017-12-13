@@ -27,8 +27,7 @@ class OrderServices
         OrderServices();
         void addNewOrdersToFile(Order order);
         void MakeOrder();
-
-
+        vector <Order> getlistOfNewOrders();
     private:
         PizzaService pizzaService;
         PizzaRepo pizzaRepo;

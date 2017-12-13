@@ -18,10 +18,11 @@ vector <Pizza> PizzaService::makePizza()
     int input = 0;
 
     vector <Topping> selectedToppings;
-
-    cout << " Insert how many toppings you want on the pizza: " << endl;
+    cout << endl << endl;
+    cout <<"Insert how many toppings you want on the pizza " << endl;
     cin >> tCount;
-
+    cout <<"  -- Here is the list of all available toppings -- ";
+    cout << endl;
     vector <Topping> toppings = toppingrepo.retriveAllToppings();
     for(unsigned int i = 0; i < toppings.size(); i++)
     {
@@ -30,23 +31,27 @@ vector <Pizza> PizzaService::makePizza()
     }
 
 
-    cout << endl;
-
     for (unsigned int i = 0; i < tCount; i++)
     {
         cin >> input;
+        cout << endl;
+        cout << endl;
         Topping topping = toppings.at(input - 1);
-        cout << "Name: " << topping.getName() << " " << "Price: " << topping.getPrice() << endl;
-
         selectedToppings.push_back(topping);
+    }
+    cout << "You've chosen a pizza with: ";
+    for (unsigned int i = 0; i < selectedToppings.size(); i++)
+    {
+        Topping topping = selectedToppings.at(i);
+        cout << topping.getName() << " ";
     }
 
         Pizza make_pizza(name, price, tCount, selectedToppings);
         pizzarepo.addPizzasToNewOrder(make_pizza);
-
+        pizzarepo.addPizzasTofile(make_pizza);
+        system("PAUSE");
         return NewPizza;;
 }
-
 
 
 void PizzaService::addPizzaToMenu(Pizza pizza)

@@ -12,10 +12,17 @@ void OrderServices::addNewOrdersToFile(Order order)
 
 }
 
+vector<Order> OrderServices::getlistOfNewOrders()
+{
+    OrderRepo orderRepo;
+    return orderRepo.getlistOfNewOrders();
+}
+
 
 void OrderServices::MakeOrder()
 {
-    cout << "Welcome please make an order: " << endl;
+    cout << endl << endl;
+    cout << "Please fill in the following information. " << endl;
 
     Order order;
 
@@ -25,14 +32,14 @@ void OrderServices::MakeOrder()
     int PizzaCount;
     vector <Order> newOrder;
     double Price = 0.0;
-
-    cout << "Name: ";
+    cout << endl << endl;
+    cout << "Insert the customer name: ";
     cin >> Name;
-
-    cout << "Phonenumber: ";
+    cout << endl;
+    cout << "Insert a phonenumber: ";
     cin >> Phonenumber;
-
-    cout << "How many pizzas? ";
+    cout << endl;
+    cout << "How many pizzas, would that be?  ";
     cin >> PizzaCount;
 
     for (int i = 0; i < PizzaCount; i++)
@@ -41,12 +48,7 @@ void OrderServices::MakeOrder()
     }
 
     vector<Pizza> NewPizzas = pizzaRepo.retrivePizzaForOrder();
-    order.setPizzas(NewPizzas);
-    order.setTotalPrice(Price);
-    order.setCustomerName(Name);
-    order.setOrderNumber(orderNumber);
-    order.setCustomerPhoneNumber(Phonenumber);
-    order.setPizzaCount(PizzaCount);
+
 
     Order makeOrder (orderNumber, Name, Phonenumber, PizzaCount, Price, NewPizzas);
 
@@ -59,7 +61,7 @@ void OrderServices::MakeOrder()
     }
     catch(exception ex)
     {
-        cout << "Unable to add Pizza to Repository" << endl;
+        cout << " Unable to add Order to Repository " << endl;
     }
 
     NewPizzas.clear();

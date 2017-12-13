@@ -60,6 +60,8 @@
 		<Unit filename="Services/OrderServices.h" />
 		<Unit filename="Services/PizzaService.cpp" />
 		<Unit filename="Services/PizzaService.h" />
+		<Unit filename="Services/RegisterServices.cpp" />
+		<Unit filename="Services/RegisterServices.h" />
 		<Unit filename="UI/AdminUI.cpp" />
 		<Unit filename="UI/AdminUI.h" />
 		<Unit filename="UI/BakerUI.cpp" />

@@ -4,6 +4,7 @@
 #include "Order.h"
 #include "OrderRepo.h"
 #include "PizzaRepo.h"
+#include "PizzaService.h"
 #include "Pizza.h"
 #include "stdlib.h"
 #include <fstream>
@@ -16,14 +17,14 @@ class BakerServices
 {
     public:
         BakerServices();
-        vector<Order> getlistOfNewOrders();
+        void showMenuPizzas();
 
-        void showAllPizzas();
+        void showNewOrderPizzas();
 
     private:
 
-        OrderRepo orderrepo;
-        PizzaRepo pizzarepo;
+        OrderRepo orderRepo;
+        PizzaRepo pizzaRepo;
 };
 
 #endif // BAKERSERVICES_H

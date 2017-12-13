@@ -3,6 +3,7 @@
 
 #include <stdlib.h>
 #include "OrderServices.h"
+#include "RegisterServices.h"
 #include "iostream"
 #include "stdlib.h"
 #include "MainUI.h"
@@ -16,6 +17,7 @@ class RegisterUI
         void RegisterMenu();
 
     private:
+        RegisterServices registerServices;
 };
 
 #endif // REGISTERUI_H

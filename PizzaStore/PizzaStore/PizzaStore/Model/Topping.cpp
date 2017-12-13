@@ -17,7 +17,6 @@ void Topping::setPrice(double price){
     this->price = price;
 }
 
-
 void Topping::setName(string name){
 
     this->name = name;

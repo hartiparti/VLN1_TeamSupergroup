@@ -21,19 +21,24 @@ vector <Order> OrderRepo::getlistOfNewOrders()
     fin.open("PizzaForOrder.txt");
     if(fin.is_open())
     {
-
-            Order o;
-            while(fin >> o)
+            while(!fin.eof())
             {
-                NewOrders.push_back(o);
-
+                Order order;
+                fin >> order;
+                NewOrders.push_back(order);
             }
+
+    }
+    else
+    {
+
+        cout << "error";
     }
 
-    fin.close();
 
 
     return NewOrders;
+    fin.close();
 }
 
 

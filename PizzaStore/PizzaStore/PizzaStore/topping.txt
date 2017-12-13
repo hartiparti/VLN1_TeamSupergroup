@@ -4,3 +4,7 @@ Ananas
 300
 1Kjulli
 200
+2Pepperoni
+200
+Skinka
+300
