@@ -5,7 +5,6 @@ OrderServices::OrderServices()
 
 }
 
-
 void OrderServices::addNewOrdersToFile(Order order)
 {
    orderRepo.storeNewOrderToFile(order);
@@ -18,6 +17,28 @@ vector<Order> OrderServices::getlistOfNewOrders()
     return orderRepo.getlistOfNewOrders();
 }
 
+
+void OrderServices::ReadAllOrders()
+{
+    vector<Order>AllOrders = getlistOfNewOrders();
+
+    if (AllOrders.size() < 1)
+    {
+        cout << "there is nothing in this vector!";
+    }
+
+    for (unsigned int i = 0; i < AllOrders.size(); i++)
+    {
+        cout << endl;
+        Order order = AllOrders.at(i);
+        cout << "Item number [" << i+1 << "] -- " <<  endl;
+        cout << "Name: " << order.getCustomerName() << endl;
+        cout << "Phone number: " << order.getCustomerPhoneNumber() << endl;
+        cout << "Price:" << order.getTotalPrice() << endl;
+        cout << endl;
+    }
+
+ }
 
 void OrderServices::MakeOrder()
 {
@@ -52,7 +73,6 @@ void OrderServices::MakeOrder()
 
     Order makeOrder (orderNumber, Name, Phonenumber, PizzaCount, Price, NewPizzas);
 
-
     try
     {
 
@@ -66,17 +86,3 @@ void OrderServices::MakeOrder()
 
     NewPizzas.clear();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -36,7 +36,8 @@ void RegisterServices::getNewOrder()
         cout << "Name: " << order.getCustomerName() << endl;
         cout << "Number: " << order.getCustomerPhoneNumber() << endl;
         cout << "Price: " << order.getTotalPrice() << endl;
-
         cout << endl;
+
+
     }
 }

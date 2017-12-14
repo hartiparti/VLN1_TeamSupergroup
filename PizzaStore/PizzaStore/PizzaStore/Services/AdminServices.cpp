@@ -12,7 +12,7 @@ void AdminServices::displayAllToppings()
 
     if (toppings.size() < 1)
     {
-        cout << "there is nothning in this vector!";
+        cout << "there is nothing in this vector!";
     }
 
     for (unsigned int i = 0; i < toppings.size(); i++)

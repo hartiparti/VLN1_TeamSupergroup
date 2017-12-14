@@ -42,7 +42,6 @@ vector<Topping> ToppingRepo::retriveAllToppings()
             toppings.push_back(t);
 
         }
-
     }
     else
     {

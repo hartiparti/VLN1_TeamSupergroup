@@ -1,4 +1,4 @@
-PartyPizza
+PizzaParty
 2000
 2Pepperoni
 200

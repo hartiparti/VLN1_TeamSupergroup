@@ -102,7 +102,7 @@ void AdminUI::Administrate()
                     Topping newTopping(toppingName, toppingPrice);
                     toppings.push_back(newTopping);
                 }
-                Pizza pizza(name, price, toppings.size(), toppings);
+                    Pizza pizza(name, price, toppings.size(), toppings);
 
                 // TODO> In stanicate in Cunstructor
                 PizzaService pizzaService;

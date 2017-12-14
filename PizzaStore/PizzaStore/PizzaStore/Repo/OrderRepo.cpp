@@ -5,6 +5,16 @@ OrderRepo::OrderRepo()
     //ctor
 }
 ///Það sem við erum að nota.
+
+void OrderRepo::storePaidOrders(Order order)
+{
+    ofstream fout;
+    fout.open("PizzaDone.txt", ios::app);
+    fout << order;
+    fout.close();
+
+}
+
 void OrderRepo::storeNewOrderToFile(Order order)
 {
     ofstream fout;
@@ -19,26 +29,19 @@ vector <Order> OrderRepo::getlistOfNewOrders()
     vector <Order> NewOrders;
     ifstream fin;
     fin.open("PizzaForOrder.txt");
+
     if(fin.is_open())
     {
-            while(!fin.eof())
-            {
-                Order order;
-                fin >> order;
-                NewOrders.push_back(order);
-            }
-
+        Order o;
+        while(!fin.eof())
+        {
+            fin >> o;
+            NewOrders.push_back(o);
+        }
+        fin.close();
     }
-    else
-    {
-
-        cout << "error";
-    }
-
-
 
     return NewOrders;
-    fin.close();
 }
 
 
@@ -55,7 +58,7 @@ void OrderRepo::storeOrderToFile(Order order)
 void OrderRepo::StoreAllOrdersToFile(vector<Order> &orders)
 {
     ofstream fout;
-    fout.open("NewOrders.txt", ios::app);
+    fout.open("orders.txt", ios::app);
     fout << orders.size();
     for(unsigned int i = 0; i < orders.size(); i++)
     {

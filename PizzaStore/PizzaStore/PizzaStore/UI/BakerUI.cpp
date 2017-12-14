@@ -39,7 +39,8 @@ void BakerUI::BakerMenu()
     printHeader();
     printScreenTop();
 
-    bakerservices.showNewOrderPizzas();
+    bakerservices.showAllPizzasFromOrders();
+    cout << endl;
 
     printScreenBottom();
 
@@ -49,8 +50,6 @@ void BakerUI::BakerMenu()
         system("CLS");
         printHeader();
 
-
-
         printScreenTop();
         printScreenBottom();
 
@@ -59,8 +58,6 @@ void BakerUI::BakerMenu()
     {
         MainUI goBack;
         goBack.startUI();
-
-
     }
     if (selection == 'q')
     {

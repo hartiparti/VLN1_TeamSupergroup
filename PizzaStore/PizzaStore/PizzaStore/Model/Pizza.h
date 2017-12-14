@@ -23,6 +23,8 @@ class Pizza
         void setPrice(double price);
         void addTopping(Topping topping);
 
+        vector <Topping> getToppings();
+
         friend ifstream& operator >> (ifstream& fin, Pizza& pizza);
         friend ofstream& operator << (ofstream& fout, const Pizza& pizza);
 

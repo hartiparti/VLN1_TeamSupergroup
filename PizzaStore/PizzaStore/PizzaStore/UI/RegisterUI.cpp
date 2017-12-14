@@ -6,7 +6,6 @@ RegisterUI::RegisterUI()
 }
 
 
-
 void RegisterUI::printRegisterMenu()
 {
     system("CLS");
@@ -31,17 +30,18 @@ void RegisterUI::RegisterMenu()
         char selection;
         cin >> selection;
             if (selection == 'f')
-            {   system("CLS");
+            {
+                system("CLS");
                 registerServices.getNewOrder();
-
             }
             else if (selection == 'o')
             {
 
+                OrderServices orderServices;
+                orderServices.ReadAllOrders();
             }
             else if (selection == 'b')
             {
-
                 MainUI goBack;
                 goBack.startUI();
             }
