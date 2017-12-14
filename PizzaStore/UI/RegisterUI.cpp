@@ -20,7 +20,6 @@ void RegisterUI::printRegisterMenu()
     cout << "                 -------------------------------------------------------------     " << endl;
 }
 
-
 void RegisterUI::RegisterMenu()
 {
 
@@ -36,7 +35,6 @@ void RegisterUI::RegisterMenu()
             }
             else if (selection == 'o')
             {
-
                 OrderServices orderServices;
                 orderServices.ReadAllOrders();
             }

@@ -5,19 +5,19 @@ BakerServices::BakerServices()
     //ctor
 }
 
-///fyrir menu pizzas.
+// Show all menu made Pizzas.
 void BakerServices::showMenuPizzas()
- {
+{
     PizzaService pizzaService;
     vector<Pizza> myMenuPizzas =  pizzaService.getPizzasFromMenu();
-    for(int i = 0; i < myMenuPizzas.size(); i++)
+    for(unsigned int i = 0; i < myMenuPizzas.size(); i++)
     {
         cout << "Pizza nr. " << i+1 << endl;
         cout << myMenuPizzas.at(i).getName() << " Price: " << myMenuPizzas.at(i).getPrice() << endl;
     }
  }
 
-
+// Show all Pizzas.
 void BakerServices::showAllPizzas()
 {
     PizzaService pizzaService;
@@ -38,7 +38,7 @@ void BakerServices::showAllPizzas()
 
 }
 
-
+// Show all Pizzas for Order.
 void BakerServices::showAllPizzasFromOrders()
 {
     OrderServices orderSevices;

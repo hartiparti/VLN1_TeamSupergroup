@@ -4,17 +4,16 @@ OrderRepo::OrderRepo()
 {
     //ctor
 }
-///Það sem við erum að nota.
-
+// Store all paid orders in, seperate file.
 void OrderRepo::storePaidOrders(Order order)
 {
     ofstream fout;
-    fout.open("PizzaDone.txt", ios::app);
+    fout.open("storePaidOrders.txt", ios::app);
     fout << order;
     fout.close();
 
 }
-
+// Store order with, ordered pizza.
 void OrderRepo::storeNewOrderToFile(Order order)
 {
     ofstream fout;
@@ -23,7 +22,7 @@ void OrderRepo::storeNewOrderToFile(Order order)
     fout.close();
 }
 
-/// Fall til að skila baka orders með vector.
+// Return order with, ordered pizza.
 vector <Order> OrderRepo::getlistOfNewOrders()
 {
     vector <Order> NewOrders;
@@ -45,7 +44,7 @@ vector <Order> OrderRepo::getlistOfNewOrders()
 }
 
 
-/// Auka fall til að store-a orders.
+// Extra function for more functionality, to add to orders. *implemented for more than current functionality of program*
 void OrderRepo::storeOrderToFile(Order order)
 {
     ofstream fout;
@@ -54,7 +53,7 @@ void OrderRepo::storeOrderToFile(Order order)
     fout.close();
 }
 
-/// Auka fall til að store-a orders, allt í einu.
+//Store everything at the same time, *implemented for more than current functionality of program*
 void OrderRepo::StoreAllOrdersToFile(vector<Order> &orders)
 {
     ofstream fout;

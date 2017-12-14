@@ -1,8 +1,8 @@
-4Pepperoni
+2Pepperoni
 200
 Skinka
-300
-Rjomaostur
-400
-Sveppir
 200
+2Sveppir
+150
+Rjomaostur
+300

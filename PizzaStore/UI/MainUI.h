@@ -14,7 +14,7 @@ class MainUI
     public:
         MainUI();
 
-        void printStart();
+void printStart();
         void WelcomeScreen();
         void printVersion();
         void printHeader();

@@ -1,6 +1,4 @@
-HartaPizza
+PizzaParty
 2000
-2sosuprump
-200
-Rassaprump
-300
+12xPepperoni
+400

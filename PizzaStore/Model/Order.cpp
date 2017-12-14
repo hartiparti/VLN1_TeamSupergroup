@@ -1,8 +1,7 @@
 #include "Order.h"
 
-#include "Order.h"
-
 Order::Order(){
+
     orderNumber = 0;
     customerName = "";
     customerPhoneNumber = "";
@@ -101,7 +100,7 @@ ofstream& operator << (ofstream& fout, const Order& order)
     fout << order.customerPhoneNumber;
     fout << order.pizzas.size();
 
-    for(int i = 0; i < order.pizzas.size(); i++)
+    for(unsigned int i = 0; i < order.pizzas.size(); i++)
     {
         fout << order.pizzas[i];
     }

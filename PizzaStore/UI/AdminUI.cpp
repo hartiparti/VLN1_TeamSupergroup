@@ -6,7 +6,6 @@ AdminUI::AdminUI()
 
 }
 
-
 void AdminUI::printAccessToppings()
 {
     system("CLS");
@@ -89,7 +88,7 @@ void AdminUI::Administrate()
                 cin >> toppingCount;
                 vector<Topping> toppings;
                 // TODO: Instead custom Toppings get avalable toppings
-                for(int i = 0; i < toppingCount; i++)
+                for(unsigned int i = 0; i < toppingCount; i++)
                 {
                     string toppingName;
                     cout << "Topping nr. " << i << endl;
@@ -117,12 +116,14 @@ void AdminUI::Administrate()
                                 cout << "b: back  q: quit " << endl;
                 char input;
                 cin >> input;
-                if(input == 'b'){
+                if(input == 'b')
+                {
 
                     adminUI.Administrate();
 
                 }
-                else if(input == 'q'){
+                else if(input == 'q')
+                {
                     exit(1);
                 }
 
@@ -132,7 +133,7 @@ void AdminUI::Administrate()
             {
                 PizzaService pizzaService;
                 vector<Pizza> myMenuPizzas =  pizzaService.getPizzasFromMenu();
-                for(int i = 0; i < myMenuPizzas.size(); i++)
+                for(unsigned int i = 0; i < myMenuPizzas.size(); i++)
                 {
                     cout << "Pizza nr. " << i+1 << endl;
                     cout << myMenuPizzas.at(i).getName() << " Price: " << myMenuPizzas.at(i).getPrice() << endl;
@@ -163,104 +164,3 @@ void AdminUI::Administrate()
         }
 }
 
-
-/*
-        printAccessToppings();
-        AdminServices adminServices;
-        char input;
-        cin >> input;
-        while(true)
-        {
-            if (input == 'r')
-            {
-                system("CLS");
-                cout << "This is the current list of toppings: " << endl;
-                cout << "---------------------------------------" << endl;
-                adminServices.displayAllToppings();
-                cout << endl;
-                system("PAUSE");
-                return;
-            }
-            else if (input == 'a')
-            {
-                system("CLS");
-                adminServices.addToToppings();
-                cout << " Finished adding toppings " << endl;
-                system("PAUSE");
-                break;
-            }
-            else if(input == 'b')
-            {
-                MainUI goBack;
-                goBack.startUI();
-            }
-    else if(input == 'p')
-    {
-        cout << "Add new Pizza to menu" << endl;
-        string name;
-        cout << "Name: ";
-        cin >> name;
-        double price;
-        cout << "Price: ";
-        cin >> price;
-
-        unsigned int toppingCount;
-        cout << "How many toppings? ";
-        cin >> toppingCount;
-        vector<Topping> toppings;
-        // TODO: Instead custom Toppings get avalable toppings
-
-        for(int i = 0; i < toppingCount; i++)
-        {
-            string toppingName;
-            cout << "Topping nr. " << i << endl;
-            cout << "\tName: ";
-            cin >> toppingName;
-
-            double toppingPrice;
-            cout << "\tPrice: ";
-            cin >> toppingPrice;
-            Topping newTopping(toppingName, toppingPrice);
-            toppings.push_back(newTopping);
-        }
-        Pizza pizza(name, price, toppings.size(), toppings);
-
-        // TODO> In stanicate in Cunstructor
-        PizzaService pizzaService;
-        try
-        {
-            pizzaService.addPizzaToMenu(pizza);
-        }
-        catch(exception ex)
-        {
-            cout << "Unable to add Pizza to Repository" << endl;
-        }
-
-    }
-    else if(input == 'v')
-    {
-        PizzaService pizzaService;
-        vector<Pizza> myMenuPizzas =  pizzaService.getPizzasFromMenu();
-        for(int i = 0; i < myMenuPizzas.size(); i++){
-            cout << "Pizza nr. " << i+1 << endl;
-            cout << myMenuPizzas.at(i).getName() << " Price: " << myMenuPizzas.at(i).getPrice() << endl;
-            system("PAUSE");
-
-        }
-        cout << endl;
-    }
-
-            else
-            {
-                cout << "Unknown input";
-            }
-
-        }
-    }
-
-    else
-    {
-        cout << "invalid input";
-    }
-}
-*/

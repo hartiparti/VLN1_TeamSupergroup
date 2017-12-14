@@ -1,9 +1,8 @@
 #include "MainUI.h"
 
-
 MainUI::MainUI()
 {
-    //ctor
+
 }
 
 void MainUI::WelcomeScreen()
@@ -40,8 +39,8 @@ void MainUI::printHeader()
     cout << "               *******************************************************" << endl;
 }
 
-void MainUI::printSelection(){
-
+void MainUI::printSelection()
+{
     cout << "               *                   1:  Admin login                   *" << endl;
     cout << "               *                   2:  Baker                         *" << endl;
     cout << "               *                   3:  Pickup & Register             *" << endl;
@@ -49,7 +48,6 @@ void MainUI::printSelection(){
     cout << "               *                   q:  Quit                          *" << endl;
     cout << "               *                                                     *" << endl;
     cout << "               *******************************************************" << endl;
-
 }
 
 void MainUI::printStart()
@@ -82,7 +80,6 @@ void MainUI::startUI()
             case '1':
                     adminUI.Administrate();
                     break;
-
             case '2':
                     bakerUI.BakerMenu();
                     break;

@@ -4,8 +4,8 @@ PizzaRepo::PizzaRepo()
 {
 
 }
-///Það sem við erum að nota.
 
+// For adding tagged pizza ready to order.
 void PizzaRepo::addPizzasToReady(Pizza pizza)
 {
     ofstream fout;
@@ -16,7 +16,7 @@ void PizzaRepo::addPizzasToReady(Pizza pizza)
     fout.close();
 
 }
-
+// For adding a pizza to order.
 void PizzaRepo::addPizzasToNewOrder(Pizza pizza)
 {
     ofstream fout;
@@ -27,7 +27,7 @@ void PizzaRepo::addPizzasToNewOrder(Pizza pizza)
     fout.close();
 }
 
-///Erum að nota til að sækja pizza fyrir order.
+// Get pizza for order.
 vector <Pizza> PizzaRepo::retrivePizzaForOrder(){
 
     vector<Pizza> PizzaForOrder;
@@ -47,8 +47,7 @@ vector <Pizza> PizzaRepo::retrivePizzaForOrder(){
     return PizzaForOrder;
 }
 
-/// Auka föll, til að adda t.d pizzu.
-
+// To store all made pizzas.
 void PizzaRepo::addPizzasTofile(Pizza pizza)
 {
     ofstream fout;
@@ -71,7 +70,6 @@ vector<Pizza>PizzaRepo::retriveAllPizzasfromfile()
 
         while(!fin.eof())
         {
-
             fin >> p;
             AllPizzas.push_back(p);
         }

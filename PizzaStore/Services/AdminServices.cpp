@@ -4,7 +4,7 @@ AdminServices::AdminServices()
 {
 
 }
-
+// Display all admin custom toppings.
 void AdminServices::displayAllToppings()
 {
 
@@ -26,7 +26,7 @@ void AdminServices::displayAllToppings()
     }
 
 }
-
+// Add to current list of custom toppings.
 void AdminServices::addToToppings()
 {
     vector<Topping> toppings;

@@ -14,7 +14,7 @@ void ToppingRepo::addToToppings(Topping &topping)
 }
 */
 
-///Föll sem við erum að nota.
+// Store all toppings.
 void ToppingRepo::storeAllToppings(vector<Topping> &toppings)
 {
     ofstream fout;
@@ -26,7 +26,7 @@ void ToppingRepo::storeAllToppings(vector<Topping> &toppings)
     }
     fout.close();
 }
-
+// Get all toppings.
 vector<Topping> ToppingRepo::retriveAllToppings()
 {
     vector<Topping> toppings;

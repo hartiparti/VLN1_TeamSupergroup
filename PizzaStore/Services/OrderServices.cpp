@@ -10,14 +10,14 @@ void OrderServices::addNewOrdersToFile(Order order)
    orderRepo.storeNewOrderToFile(order);
 
 }
-
+// Read list of all new orders.
 vector<Order> OrderServices::getlistOfNewOrders()
 {
     OrderRepo orderRepo;
     return orderRepo.getlistOfNewOrders();
 }
 
-
+// Read all orders.
 void OrderServices::ReadAllOrders()
 {
     vector<Order> AllOrders = getlistOfNewOrders();
@@ -39,7 +39,7 @@ void OrderServices::ReadAllOrders()
     }
 
  }
-
+// Create an order, try adding to Orders repo, else throw.
 void OrderServices::MakeOrder()
 {
     cout << endl << endl;
@@ -65,18 +65,17 @@ void OrderServices::MakeOrder()
 
     for (int i = 0; i < PizzaCount; i++)
     {
-        pizzaService.makePizza();
+        pizzaService.makePizza();               // Create a Pizza.
     }
 
     vector<Pizza> NewPizzas = pizzaRepo.retrivePizzaForOrder();
-
 
     Order makeOrder (orderNumber, Name, Phonenumber, PizzaCount, Price, NewPizzas);
 
     try
     {
 
-         addNewOrdersToFile(makeOrder);
+         addNewOrdersToFile(makeOrder);  // Stash that pizza with an order.
 
     }
     catch(exception ex)

@@ -1,6 +1,14 @@
 Pizza
-1500
-24Pepperoni
+1600
+32Pepperoni
 200
 Skinka
+200
+2Pepperoni
+200
+Pizza
+1450
+22Sveppir
+150
+Rjomaostur
 300

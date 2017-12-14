@@ -5,7 +5,7 @@ RegisterServices::RegisterServices()
     //ctor
 }
 
-
+// For finding orders based on phone numbers, needs to be validated.
 vector <Order> RegisterServices::findNewOrder(string input)
 {
     vector <Order> ListofNewOrders = orderRepo.getlistOfNewOrders();
@@ -22,6 +22,7 @@ vector <Order> RegisterServices::findNewOrder(string input)
         return FindCustomersOrder;
 }
 
+// Create a new order.
 void RegisterServices::getNewOrder()
 {
     string input = " ";
@@ -37,7 +38,5 @@ void RegisterServices::getNewOrder()
         cout << "Number: " << order.getCustomerPhoneNumber() << endl;
         cout << "Price: " << order.getTotalPrice() << endl;
         cout << endl;
-
-
     }
 }

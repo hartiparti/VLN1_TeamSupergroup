@@ -6,7 +6,7 @@ PizzaService::PizzaService()
 }
 
 
-
+// Primary function so the user can make Pizza from admin made toppings.
 vector <Pizza> PizzaService::makePizza()
 {
     vector <Pizza> NewPizza;
@@ -57,7 +57,7 @@ vector <Pizza> PizzaService::makePizza()
         return NewPizza;;
 }
 
-
+// Simply add pizzas to menu, needs validation.
 void PizzaService::addPizzaToMenu(Pizza pizza)
 {
     PizzaRepo pizzaRepo;
@@ -66,26 +66,26 @@ void PizzaService::addPizzaToMenu(Pizza pizza)
         pizzaRepo.storePizzaToMenu(pizza);
     }
 }
-
+// Get only menu pizzas from DataAccess layer.
 vector<Pizza> PizzaService::getPizzasFromMenu()
 {
     PizzaRepo pizzaRepo;
     return pizzaRepo.retivePizzaFromMenu();
 }
-
+// Get all pizzas from DataAccess layer
 vector <Pizza> PizzaService::getAllPizzas()
 {
     PizzaRepo pizzaRepo;
     return pizzaRepo.retriveAllPizzasfromfile();
 }
-
+// Get only pizzas, made with orders DataAccess layer
 vector <Pizza> PizzaService::retrivePizzaForOrder()
 {
     PizzaRepo pizzaRepo;
     return pizzaRepo.retrivePizzaForOrder();
 
 }
-// TODO
+// TODO Validate all pizzas.
 bool PizzaService::isValid(Pizza pizza){
     return true;
 }
