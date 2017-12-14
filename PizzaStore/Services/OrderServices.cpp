@@ -20,7 +20,7 @@ vector<Order> OrderServices::getlistOfNewOrders()
 
 void OrderServices::ReadAllOrders()
 {
-    vector<Order>AllOrders = getlistOfNewOrders();
+    vector<Order> AllOrders = getlistOfNewOrders();
 
     if (AllOrders.size() < 1)
     {
@@ -31,10 +31,10 @@ void OrderServices::ReadAllOrders()
     {
         cout << endl;
         Order order = AllOrders.at(i);
-        cout << "Item number [" << i+1 << "] -- " <<  endl;
-        cout << "Name: " << order.getCustomerName() << endl;
-        cout << "Phone number: " << order.getCustomerPhoneNumber() << endl;
-        cout << "Price:" << order.getTotalPrice() << endl;
+        cout << "Order [" << i+1 << "] -- " <<  endl;
+        cout << "Name: " << AllOrders.at(i).getCustomerName() << endl;
+        cout << "Phone number: " << AllOrders.at(i).getCustomerPhoneNumber() << endl;
+        cout << "Price:" << AllOrders.at(i).getTotalPrice() << endl;
         cout << endl;
     }
 

@@ -68,12 +68,16 @@ vector<Pizza>PizzaRepo::retriveAllPizzasfromfile()
     if(fin.is_open())
     {
         Pizza p;
+
         while(!fin.eof())
         {
+
             fin >> p;
             AllPizzas.push_back(p);
         }
+
         fin.close();
+
     }
 
     return AllPizzas;

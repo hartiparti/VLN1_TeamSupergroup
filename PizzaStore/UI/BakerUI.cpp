@@ -39,7 +39,7 @@ void BakerUI::BakerMenu()
     printHeader();
     printScreenTop();
 
-    bakerservices.showAllPizzasFromOrders();
+    bakerservices.showAllPizzas();
     cout << endl;
 
     printScreenBottom();

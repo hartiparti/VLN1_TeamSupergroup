@@ -22,15 +22,18 @@ void BakerServices::showAllPizzas()
 {
     PizzaService pizzaService;
     vector <Pizza> ListOfAllPizzas = pizzaService.getAllPizzas();
-
+    Pizza pizza;
     if (ListOfAllPizzas.size() == 0)
     {
         cout << "There are no pizzas to make";
     }
+
     for(unsigned int i = 0; i < ListOfAllPizzas.size(); i++)
     {
+        Pizza pizza = ListOfAllPizzas.at(i);
         cout << "Pizza nr: " << i + 1 << endl;
-        // reyna prenta toppings;
+        cout << pizza.getName();
+        cout << pizza.getPrice();
     }
 
 }
@@ -40,8 +43,12 @@ void BakerServices::showAllPizzasFromOrders()
 {
     OrderServices orderSevices;
     PizzaService pizzaService;
-    vector <Pizza> ListOfAllPizzas = pizzaService.retrivePizzaForOrder();
+    vector <Pizza> ListOfAllPizzas = pizzaService.getAllPizzas();
+
+
+    pizzaService.retrivePizzaForOrder();
     Order order;
+    Pizza pizza;
     order.setPizzas(ListOfAllPizzas);
 
     if (ListOfAllPizzas.size() == 0)
@@ -51,7 +58,7 @@ void BakerServices::showAllPizzasFromOrders()
     for(unsigned int i = 0; i < ListOfAllPizzas.size(); i++)
     {
         cout << "Pizza nr. " << i+1 << endl;
-        cout << ListOfAllPizzas.at(i).getName();
+        cout << pizza.getName();
 
     }
 

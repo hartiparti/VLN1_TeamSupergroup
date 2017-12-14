@@ -1,6 +1,0 @@
-PizzaParty
-2000
-2Pepperoni
-200
-Skinka
-300

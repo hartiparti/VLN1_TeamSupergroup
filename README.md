@@ -30,18 +30,18 @@ staff that receives the payment and delivers the orders
 
 Our Project: 
 
-The project is divided into a 3 layer design structure.  We have 3 so called DataClasses, they are "Ordderrepo, Pizzareepo, Toppingrrepo"  We choose to work with binary files, rather than working with text files. Using vectors was also helpfull to gain access to the data that was written.  
+The project is divided into a 3 layer design structure.  We have 3 so called DataClasses, they are "Ordderrepo, Pizzareepo, Toppingrrepo"  We choose to work with binary files, rather than working with text files. Using vectors was also helpfull to gain access to the data that was written.   *UPDATE* Due to extreme problematic issues, we had to change the whole reposatory to text files. Refactoring this project took some time. 
 
 The structure of the program is as follows: 
 
 LAYER 1: 	
 - Main_UI:	 	The main program, where it all runs. 
 
-- Administrator_UI:	Only the administrator can access the toppingsrepo, to add new toppings to the system through AdminService , 				there is a possibilty to improve this interface.
+- Administrator_UI:	Only the administrator can access the toppingsrepo, to add new toppings to the system through AdminService, there is a possibilty to improve this interface.
 
 - Baker_UI:		From the Baker UI you can see all un-made orders, and flag them to be ready. Talks to BakerServices. 
 
-- Register_UI: 		The register UI has the ability to call up orders via phone_nr that are ready, and finalize them 					through RegisterServices 
+- Register_UI: 		The register UI has the ability to call up orders via phone_nr that are ready, and finalize them  through RegisterServices 
 
 - OrderScreen_UI: 	The OrderScreen_UI is the interface to make an order in this system 
 
@@ -68,7 +68,7 @@ Topping = included all the data for topping, read/write get/set and overload
 
 Exeception classes to throw out errors, and control the input. 
 
-In this system you can go back and forth as you wish, but only the user holding the administrator password can access that 		interface. 
+In this system you can go back and forth as you wish, but only the user holding the administrator password can access that interface. 
 	
 Code Example: 
  As we worked heavily with vectors and learning as we go, here's an example of a typical code. 
@@ -93,7 +93,7 @@ Installation
 All the necessary requirements is included in this directory to run this program. The program should compile on all compilers. 
 
 Agenda 
-All the informations that was gathered for this project was based on our studies in the following weeks, and from our programming classes during our semester. However due to the time strain, our project has only the minimum requirements. 
+All the informations that was gathered for this project was based on our studies in the following weeks, and from our programming classes during our semester. However due to the time strain, our project has not finished the minimum requirements. 
 
 Tests
 Tests can be done by running the entire project, to see if the system works. 
