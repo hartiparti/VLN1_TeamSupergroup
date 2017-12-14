@@ -1,9 +1,5 @@
 Pizza
 1000
-32Skinka
+12Skinka
 200
-Ananas
-300
-1Kjulli
-200
-0Harti846367700
+0elfar663169900

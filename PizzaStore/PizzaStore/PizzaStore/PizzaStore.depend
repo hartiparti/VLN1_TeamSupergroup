@@ -819,7 +819,7 @@
 1513213102 source:c:\users\elfar\documents\github\vln1_teamsupergroup\pizzastore\pizzastore\pizzastore\repo\toppingrepo.cpp
 	"ToppingRepo.h"
 
-1513213102 source:c:\users\elfar\documents\github\vln1_teamsupergroup\pizzastore\pizzastore\pizzastore\services\adminservices.cpp
+1513259291 source:c:\users\elfar\documents\github\vln1_teamsupergroup\pizzastore\pizzastore\pizzastore\services\adminservices.cpp
 	"AdminServices.h"
 
 1513213102 source:c:\users\elfar\documents\github\vln1_teamsupergroup\pizzastore\pizzastore\pizzastore\services\bakerservices.cpp
@@ -845,4 +845,8 @@
 
 1513213102 source:c:\users\elfar\documents\github\vln1_teamsupergroup\pizzastore\pizzastore\pizzastore\ui\registerui.cpp
 	"RegisterUI.h"
+
+1513215693 source:c:\users\elfar\documents\github\vln1_teamsupergroup\pizzastore\pizzastore\pizzastore\ui\adminui.cpp
+	"AdminUI.h"
+	"AdminServices.h"
 

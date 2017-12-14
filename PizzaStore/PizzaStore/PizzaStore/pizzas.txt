@@ -115,3 +115,11 @@ Ananas
 300
 1Kjulli
 200
+Pizza
+1000
+12Skinka
+200
+Pizza
+1000
+12Skinka
+200
