@@ -80,3 +80,9 @@ Pizza
 200
 Ananas
 300
+Pizza
+1500
+2Skinka
+200
+Ananas
+300
