@@ -5,18 +5,6 @@ PizzaRepo::PizzaRepo()
 
 }
 
-// For adding tagged pizza ready to order.
-void PizzaRepo::addPizzasToReady(Pizza pizza)
-{
-    ofstream fout;
-    fout.open("PizzasOrderReady.txt", ios::app);
-
-    fout << pizza;
-
-    fout.close();
-
-}
-// For adding a pizza to order.
 void PizzaRepo::addPizzasToNewOrder(Pizza pizza)
 {
     ofstream fout;
@@ -27,7 +15,6 @@ void PizzaRepo::addPizzasToNewOrder(Pizza pizza)
     fout.close();
 }
 
-// Get pizza for order.
 vector <Pizza> PizzaRepo::retrivePizzaForOrder(){
 
     vector<Pizza> PizzaForOrder;
@@ -37,8 +24,7 @@ vector <Pizza> PizzaRepo::retrivePizzaForOrder(){
     if(fin.is_open())
     {
         Pizza p;
-        while(!fin.eof()){
-            fin >> p;
+        while(fin >> p){
             PizzaForOrder.push_back(p);
         }
         fin.close();
@@ -47,7 +33,6 @@ vector <Pizza> PizzaRepo::retrivePizzaForOrder(){
     return PizzaForOrder;
 }
 
-// To store all made pizzas.
 void PizzaRepo::addPizzasTofile(Pizza pizza)
 {
     ofstream fout;
@@ -57,30 +42,31 @@ void PizzaRepo::addPizzasTofile(Pizza pizza)
 
     fout.close();
 }
-/// Auka fall til að sækja allar pizzur.
 vector<Pizza>PizzaRepo::retriveAllPizzasfromfile()
 {
-    vector <Pizza> AllPizzas;
+   vector <Pizza> vector_of_pizzas;
+
     ifstream fin;
     fin.open("pizzas.txt");
-
     if(fin.is_open())
     {
+
         Pizza p;
-
-        while(!fin.eof())
+        while(fin >> p)
         {
-            fin >> p;
-            AllPizzas.push_back(p);
+            vector_of_pizzas.push_back(p);
+
         }
-
-        fin.close();
-
+    }
+    else
+    {
+        cout << "Error";
     }
 
-    return AllPizzas;
+    fin.close();
+    return vector_of_pizzas;
 }
-/// Auka fall til að geyma pizzur.
+
 void PizzaRepo::storePizzaToMenu(Pizza pizza)
 {
     ofstream fout;

@@ -4,17 +4,9 @@ ToppingRepo::ToppingRepo()
 {
 
 }
-/// Óþarfa fall
-/*
-void ToppingRepo::addToToppings(Topping &topping)
-{
-    vector<Topping> toppingList = retriveAllToppings();
-    toppingList.push_back(topping);
-    storeAllToppings(toppingList);
-}
-*/
 
-// Store all toppings.
+
+///Föll sem við erum að nota.
 void ToppingRepo::storeAllToppings(vector<Topping> &toppings)
 {
     ofstream fout;
@@ -26,7 +18,7 @@ void ToppingRepo::storeAllToppings(vector<Topping> &toppings)
     }
     fout.close();
 }
-// Get all toppings.
+
 vector<Topping> ToppingRepo::retriveAllToppings()
 {
     vector<Topping> toppings;
@@ -42,6 +34,7 @@ vector<Topping> ToppingRepo::retriveAllToppings()
             toppings.push_back(t);
 
         }
+
     }
     else
     {

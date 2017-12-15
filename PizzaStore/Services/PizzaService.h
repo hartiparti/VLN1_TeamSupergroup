@@ -21,10 +21,11 @@ class PizzaService
     public:
         PizzaService();
         vector <Pizza> makePizza();
-        void addPizzaToMenu(Pizza pizza);
+        void MakePizza2();
 
+        void addPizzaToMenu(Pizza pizza);
         vector<Pizza> getPizzasFromMenu();
-        vector <Pizza> getAllPizzas();
+
         vector <Pizza> retrivePizzaForOrder();
 
     private:

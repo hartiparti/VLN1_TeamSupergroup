@@ -28,6 +28,8 @@ class Pizza
         friend ifstream& operator >> (ifstream& fin, Pizza& pizza);
         friend ofstream& operator << (ofstream& fout, const Pizza& pizza);
 
+        //friend ostream& operator << (ostream& fout, const Pizza& pizza);
+
     private:
         string name;
         double price;

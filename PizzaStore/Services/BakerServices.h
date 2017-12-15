@@ -4,7 +4,6 @@
 #include "Order.h"
 #include "OrderRepo.h"
 #include "PizzaRepo.h"
-#include "OrderServices.h"
 #include "PizzaService.h"
 #include "Pizza.h"
 #include "stdlib.h"
@@ -19,8 +18,7 @@ class BakerServices
     public:
         BakerServices();
         void showMenuPizzas();
-        void showAllPizzasFromOrders();
-        void showAllPizzas();
+
         void showNewOrderPizzas();
 
     private:

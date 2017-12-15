@@ -25,11 +25,6 @@ double Pizza::getPrice()
     return this->price;
 }
 
-vector<Topping> Pizza::getToppings()
-{
-    return toppings;
-}
-
 void Pizza::setName(string name)
 {
     this->name = name;
@@ -39,6 +34,12 @@ void Pizza::setPrice(double price)
 {
     this->price = price;
 }
+
+vector <Topping> Pizza::getToppings()
+{
+    return toppings;
+}
+
 
 ifstream& operator >> (ifstream& fin, Pizza& pizza)
 {
@@ -56,6 +57,7 @@ ifstream& operator >> (ifstream& fin, Pizza& pizza)
     return fin;
 }
 
+
 ofstream& operator << (ofstream& fout, const Pizza& pizza)
 {
     fout << pizza.name << endl;
@@ -69,3 +71,4 @@ ofstream& operator << (ofstream& fout, const Pizza& pizza)
 
     return fout;
 }
+

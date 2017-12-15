@@ -4,7 +4,6 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
-#include <string>
 
 #include "Pizza.h"
 
@@ -17,7 +16,7 @@ class PizzaRepo
         /// Föll sem við erum að nota.
         void addPizzasToNewOrder(Pizza pizza);
         vector <Pizza>retrivePizzaForOrder();
-        void addPizzasToReady(Pizza pizza);
+
         /// Föll fyrir menu.
         void storePizzaToMenu(Pizza pizza);
         vector<Pizza> retivePizzaFromMenu();

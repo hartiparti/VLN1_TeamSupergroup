@@ -1,4 +1,6 @@
-PizzaParty
+PartyPizza
 2000
-12xPepperoni
-400
+2Pepperoni
+200
+Skinka
+300

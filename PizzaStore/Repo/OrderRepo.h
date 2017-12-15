@@ -20,7 +20,6 @@ class OrderRepo
         ///Auka föll
         void storeOrderToFile(Order order);
         void StoreAllOrdersToFile(vector<Order> &orders);
-        void storePaidOrders(Order order);
 
 
     private:

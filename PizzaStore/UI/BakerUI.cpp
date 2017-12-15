@@ -39,8 +39,7 @@ void BakerUI::BakerMenu()
     printHeader();
     printScreenTop();
 
-    bakerservices.showAllPizzas();
-    cout << endl;
+    bakerservices.showNewOrderPizzas();
 
     printScreenBottom();
 
@@ -49,7 +48,9 @@ void BakerUI::BakerMenu()
     {
         system("CLS");
         printHeader();
-        // call to service for Validate input and flag order/pizza, should send to right repo.
+
+
+
         printScreenTop();
         printScreenBottom();
 
@@ -58,6 +59,8 @@ void BakerUI::BakerMenu()
     {
         MainUI goBack;
         goBack.startUI();
+
+
     }
     if (selection == 'q')
     {

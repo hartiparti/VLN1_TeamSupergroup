@@ -23,12 +23,11 @@ using namespace std;
 class OrderServices
 {
     public:
+
         OrderServices();
         void addNewOrdersToFile(Order order);
         void MakeOrder();
         vector <Order> getlistOfNewOrders();
-        void ReadAllOrders();
-
     private:
         PizzaService pizzaService;
         PizzaRepo pizzaRepo;

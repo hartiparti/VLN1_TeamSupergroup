@@ -4,7 +4,7 @@ AdminServices::AdminServices()
 {
 
 }
-// Display all admin custom toppings.
+
 void AdminServices::displayAllToppings()
 {
 
@@ -12,7 +12,7 @@ void AdminServices::displayAllToppings()
 
     if (toppings.size() < 1)
     {
-        cout << "there is nothing in this vector!";
+        cout << "there is nothning in this vector!";
     }
 
     for (unsigned int i = 0; i < toppings.size(); i++)
@@ -26,7 +26,7 @@ void AdminServices::displayAllToppings()
     }
 
 }
-// Add to current list of custom toppings.
+
 void AdminServices::addToToppings()
 {
     vector<Topping> toppings;
