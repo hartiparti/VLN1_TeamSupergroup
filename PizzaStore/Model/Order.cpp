@@ -8,9 +8,10 @@ Order::Order(){
     customerPhoneNumber = "";
     pizzaCount = 0;
     totalPrice = 0;
+    orderStatus = 0;
 }
 
-Order::Order(int orderNumber, string customerName, string customerPhoneNumber, int pizzaCount, double totalPrice, vector<Pizza> pizzas)
+Order::Order(int orderNumber, string customerName, string customerPhoneNumber, int pizzaCount, double totalPrice, vector<Pizza> pizzas, int orderstatus)
 {
     this->orderNumber = orderNumber;
     this->customerName = customerName;
@@ -18,8 +19,17 @@ Order::Order(int orderNumber, string customerName, string customerPhoneNumber, i
     this->pizzaCount= pizzaCount;
     this->totalPrice = totalPrice;
     this->pizzas = pizzas;
+    this->orderStatus = orderStatus;
 
 
+}
+int Order::getOrderStatus()
+{
+    return orderStatus;
+}
+void Order::setOrderStatus(int orderStatus)
+{
+    this->orderStatus = orderStatus;
 }
 int Order::getOrderNumber()
 {
@@ -82,6 +92,7 @@ ifstream& operator >> (ifstream& fin, Order& order)
     fin >> order.customerName;
     fin >> order.customerPhoneNumber;
     fin >> order.pizzaCount;
+    fin >> order.orderStatus;
 
     for(int i = 0; i < order.pizzaCount; i++)
     {
@@ -100,8 +111,9 @@ ofstream& operator << (ofstream& fout, const Order& order)
     fout << order.customerName;
     fout << order.customerPhoneNumber;
     fout << order.pizzas.size();
+    fout << order.orderStatus;
 
-    for(int i = 0; i < order.pizzas.size(); i++)
+    for(unsigned int i = 0; i < order.pizzas.size(); i++)
     {
         fout << order.pizzas[i];
     }

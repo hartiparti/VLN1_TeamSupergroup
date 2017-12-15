@@ -14,7 +14,10 @@ class Order
 {
     public:
         Order();
-        Order(int orderNumber, string customerName, string customerPhoneNumber, int pizzaCount, double totalPrice, vector<Pizza> pizzas);
+        Order(int orderNumber, string customerName, string customerPhoneNumber, int pizzaCount, double totalPrice, vector<Pizza> pizzas, int orderStatus);
+
+        int getOrderStatus();
+        void setOrderStatus(int orderStatus);
 
         int getOrderNumber();
         void setOrderNumber(int orderNumber);
@@ -38,6 +41,7 @@ class Order
         friend ofstream& operator << (ofstream& fout, const Order& order);
 
     private:
+        int orderStatus;
         int orderNumber;
         string customerName;
         string customerPhoneNumber;

@@ -7,7 +7,7 @@ BakerServices::BakerServices()
 }
 
 
-
+/// Primarly to print out only menu Pizzas.
 void BakerServices::showMenuPizzas()
  {
     PizzaService pizzaService;
@@ -19,6 +19,8 @@ void BakerServices::showMenuPizzas()
 
     }
  }
+
+/// Should print out Pizzas for orders.
 void BakerServices::showNewOrderPizzas()
 {
     vector <Pizza> ListOfPizzas = pizzaRepo.retriveAllPizzasfromfile();
@@ -30,11 +32,17 @@ void BakerServices::showNewOrderPizzas()
     for (unsigned int i = 0; i < ListOfPizzas.size(); i++)
     {
         cout << "Pizza nr. " << i+1 << endl;
-        cout << ListOfPizzas.at(i).getName() << " Price: " << ListOfPizzas.at(i).getPrice() << endl;
+        cout << "       " << ListOfPizzas.at(i).getName() << " Price: " << ListOfPizzas.at(i).getPrice();
+        cout << "                                        " << ListOfPizzas.at(i).getStatus();
+        cout << endl;
 
     }
 
+
 }
+
+
+
 
 
 

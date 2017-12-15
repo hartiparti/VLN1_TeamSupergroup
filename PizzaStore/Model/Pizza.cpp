@@ -7,14 +7,23 @@ Pizza::Pizza()
 
 }
 
-Pizza::Pizza(string name, double price, int toppingsCount, vector<Topping> toppings)
+Pizza::Pizza(string name, double price, int toppingsCount, vector<Topping> toppings, int status)
 {
     this->name = name;
     this->price = price;
     this->toppings = toppings;
     this->toppingsCount = toppingsCount;
+    this->status = status;
 }
+int Pizza::getStatus()
+{
+    return this->status;
+}
+void Pizza::setStatus(int status)
+{
+    this-> status = status;
 
+}
 string Pizza::getName()
 {
     return this-> name;
@@ -47,12 +56,15 @@ ifstream& operator >> (ifstream& fin, Pizza& pizza)
     fin >> pizza.price;
     fin >> pizza.toppingsCount;
 
+
     for(int i = 0; i < pizza.toppingsCount; i++)
     {
         Topping t;
         fin >> t;
         pizza.toppings.push_back(t);
     }
+
+    fin >> pizza.status;
 
     return fin;
 }
@@ -68,6 +80,8 @@ ofstream& operator << (ofstream& fout, const Pizza& pizza)
     {
         fout << pizza.toppings[i];
     }
+
+    fout << pizza.status;
 
     return fout;
 }

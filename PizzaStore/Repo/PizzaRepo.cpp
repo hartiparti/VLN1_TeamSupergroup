@@ -4,7 +4,7 @@ PizzaRepo::PizzaRepo()
 {
 
 }
-
+/// Add Pizzas to "PizzaForOrder"
 void PizzaRepo::addPizzasToNewOrder(Pizza pizza)
 {
     ofstream fout;
@@ -14,7 +14,7 @@ void PizzaRepo::addPizzasToNewOrder(Pizza pizza)
 
     fout.close();
 }
-
+/// Retrieve pizzas from orders only
 vector <Pizza> PizzaRepo::retrivePizzaForOrder(){
 
     vector<Pizza> PizzaForOrder;
@@ -33,6 +33,7 @@ vector <Pizza> PizzaRepo::retrivePizzaForOrder(){
     return PizzaForOrder;
 }
 
+/// For adding pizzas to file.
 void PizzaRepo::addPizzasTofile(Pizza pizza)
 {
     ofstream fout;
@@ -42,6 +43,7 @@ void PizzaRepo::addPizzasTofile(Pizza pizza)
 
     fout.close();
 }
+/// Retrieve all pizzas from repo.
 vector<Pizza>PizzaRepo::retriveAllPizzasfromfile()
 {
    vector <Pizza> vector_of_pizzas;
@@ -60,7 +62,7 @@ vector<Pizza>PizzaRepo::retriveAllPizzasfromfile()
     }
     else
     {
-        cout << "Error";
+        cout << "File could not open";
     }
 
     fin.close();

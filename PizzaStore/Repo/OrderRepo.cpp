@@ -2,9 +2,9 @@
 
 OrderRepo::OrderRepo()
 {
-    //ctor
-}
 
+}
+/// Should store all orders.
 void OrderRepo::storeNewOrderToFile(Order order)
 {
     ofstream fout;
@@ -13,7 +13,7 @@ void OrderRepo::storeNewOrderToFile(Order order)
     fout.close();
 }
 
-
+/// Should get list of all orders.
 vector <Order> OrderRepo::getlistOfNewOrders()
 {
     vector <Order> NewOrders;
@@ -24,21 +24,21 @@ vector <Order> OrderRepo::getlistOfNewOrders()
             while(!fin.eof())
             {
                 Order order;
+
                 fin >> order;
                 NewOrders.push_back(order);
             }
-
     }
     else
     {
-
-        cout << "error";
+        cout << "File could not open";
     }
 
-    return NewOrders;
     fin.close();
+    return NewOrders;
 }
 
+/// Extra access, implemented for further functionality of the program.
 void OrderRepo::storeOrderToFile(Order order)
 {
     ofstream fout;
@@ -46,6 +46,8 @@ void OrderRepo::storeOrderToFile(Order order)
     fout << order;
     fout.close();
 }
+
+/// Extra access, implemented for further functionality of the program, store everything at the same time.
 
 void OrderRepo::StoreAllOrdersToFile(vector<Order> &orders)
 {

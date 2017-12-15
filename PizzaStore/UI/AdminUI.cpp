@@ -88,6 +88,7 @@ void AdminUI::Administrate()
                 cout << "How many toppings? ";
                 cin >> toppingCount;
                 vector<Topping> toppings;
+                int status = 0;
                 // TODO: Instead custom Toppings get avalable toppings
                 for(int i = 0; i < toppingCount; i++)
                 {
@@ -102,7 +103,7 @@ void AdminUI::Administrate()
                     Topping newTopping(toppingName, toppingPrice);
                     toppings.push_back(newTopping);
                 }
-                Pizza pizza(name, price, toppings.size(), toppings);
+                Pizza pizza(name, price, toppings.size(), toppings, status);
 
                 // TODO> In stanicate in Cunstructor
                 PizzaService pizzaService;

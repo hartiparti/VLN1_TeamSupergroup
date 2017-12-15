@@ -14,10 +14,13 @@ class Pizza
 {
     public:
         Pizza();
-        Pizza(string name, double price, int toppingsCount, vector<Topping> toppings);
+        Pizza(string name, double price, int toppingsCount, vector<Topping> toppings, int status);
 
         string getName();
         double getPrice();
+
+        void setStatus(int status);
+        int getStatus();
 
         void setName(string name);
         void setPrice(double price);
@@ -35,5 +38,6 @@ class Pizza
         double price;
         int toppingsCount;
         vector<Topping> toppings;
+        int status;
 };
 #endif // PIZZA_H
