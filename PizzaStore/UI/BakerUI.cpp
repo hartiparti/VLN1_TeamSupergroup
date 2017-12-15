@@ -47,12 +47,14 @@ void BakerUI::BakerMenu()
     if(selection == 'r')
     {
         system("CLS");
+
+        pizzaRepo.updateStatusOfNextPizza();
+
         printHeader();
-
-
-
         printScreenTop();
+        bakerservices.showNewOrderPizzas();
         printScreenBottom();
+        system("PAUSE");
 
     }
     if (selection == 'b')

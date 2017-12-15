@@ -1440,25 +1440,25 @@
 1513350099 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\repo\orderrepo.cpp
 	"OrderRepo.h"
 
-1513351256 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\repo\pizzarepo.cpp
+1513313540 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\repo\pizzarepo.cpp
 	"PizzaRepo.h"
 
-1513350966 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\repo\toppingrepo.cpp
+1513313540 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\repo\toppingrepo.cpp
 	"ToppingRepo.h"
 
 1513313540 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\services\adminservices.cpp
 	"AdminServices.h"
 
-1513351362 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\services\bakerservices.cpp
+1513350043 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\services\bakerservices.cpp
 	"BakerServices.h"
 
-1513351068 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\services\orderservices.cpp
+1513348541 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\services\orderservices.cpp
 	"OrderServices.h"
 
-1513351162 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\services\pizzaservice.cpp
+1513349586 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\services\pizzaservice.cpp
 	"PizzaService.h"
 
-1513351195 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\services\registerservices.cpp
+1513313540 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\services\registerservices.cpp
 	"RegisterServices.h"
 
 1513349618 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\ui\adminui.cpp
@@ -1480,4 +1480,366 @@
 1513348686 source:c:\users\hartiparti\downloads\vln1_teamsupergroup-master\vln1_teamsupergroup-master\pizzastore\model\order.cpp
 	"Order.h"
 	"Order.h"
+
+1513313540 source:c:\users\isakm\downloads\pizzastore\main.cpp
+	<iostream>
+	<stdlib.h>
+	<MainUI.h>
+
+1513313540 c:\users\isakm\downloads\pizzastore\ui\mainui.h
+	"AdminUI.h"
+	"BakerUI.h"
+	"OrderScreenUI.h"
+	"RegisterUI.h"
+	<stdlib.h>
+	<iostream>
+
+1513313540 c:\users\isakm\downloads\pizzastore\ui\adminui.h
+	<stdlib.h>
+	"AdminServices.h"
+	"MainUI.h"
+	"PizzaService.h"
+
+1513313540 c:\users\isakm\downloads\pizzastore\services\adminservices.h
+	<fstream>
+	"Topping.h"
+	"Toppingrepo.h"
+	<vector>
+	<iostream>
+
+1513313540 c:\users\isakm\downloads\pizzastore\model\topping.h
+	<iostream>
+	<fstream>
+	<string.h>
+
+1513313540 c:\users\isakm\downloads\pizzastore\repo\toppingrepo.h
+	"Topping.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+
+1513313540 c:\users\isakm\downloads\pizzastore\services\pizzaservice.h
+	<iostream>
+	<string>
+	<fstream>
+	<vector>
+	<stdlib.h>
+	"PizzaService.h"
+	"Pizza.h"
+	"PizzaRepo.h"
+	"ToppingRepo.h"
+
+1513349564 c:\users\isakm\downloads\pizzastore\model\pizza.h
+	<iostream>
+	<fstream>
+	<stddef.h>
+	<vector>
+	"Topping.h"
+
+1513352005 c:\users\isakm\downloads\pizzastore\repo\pizzarepo.h
+	<fstream>
+	<iostream>
+	<vector>
+	"Pizza.h"
+
+1513355688 c:\users\isakm\downloads\pizzastore\ui\bakerui.h
+	"MainUI.h"
+	"Order.h"
+	"BakerServices.h"
+	<stdlib.h>
+
+1513348665 c:\users\isakm\downloads\pizzastore\model\order.h
+	<vector>
+	<string>
+	<iostream>
+	<string.h>
+	"Pizza.h"
+
+1513313540 c:\users\isakm\downloads\pizzastore\services\bakerservices.h
+	"Order.h"
+	"OrderRepo.h"
+	"PizzaRepo.h"
+	"PizzaService.h"
+	"Pizza.h"
+	"stdlib.h"
+	<fstream>
+	<vector>
+	<iostream>
+
+1513313540 c:\users\isakm\downloads\pizzastore\repo\orderrepo.h
+	<fstream>
+	<iostream>
+	<vector>
+	"Order.h"
+	"Pizza.h"
+
+1513313540 c:\users\isakm\downloads\pizzastore\ui\orderscreenui.h
+	"MainUI.h"
+	"OrderServices.h"
+	"PizzaService.h"
+	"iostream"
+	"stdlib.h"
+
+1513313540 c:\users\isakm\downloads\pizzastore\services\orderservices.h
+	<iostream>
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"ToppingRepo.h"
+	"PizzaRepo.h"
+	"OrderRepo.h"
+	"Order.h"
+	"Topping.h"
+	"ToppingRepo.h"
+	"PizzaService.h"
+	<vector>
+	<iostream>
+
+1513313540 c:\users\isakm\downloads\pizzastore\ui\registerui.h
+	<stdlib.h>
+	"OrderServices.h"
+	"RegisterServices.h"
+	"iostream"
+	"stdlib.h"
+	"MainUI.h"
+
+1513313540 c:\users\isakm\downloads\pizzastore\services\registerservices.h
+	"OrderRepo.h"
+	"Order.h"
+	<stdlib.h>
+	<string>
+	<iostream>
+	<Vector>
+
+1513348686 source:c:\users\isakm\downloads\pizzastore\model\order.cpp
+	"Order.h"
+	"Order.h"
+
+1513349684 source:c:\users\isakm\downloads\pizzastore\model\pizza.cpp
+	"Pizza.h"
+
+1513313540 source:c:\users\isakm\downloads\pizzastore\model\topping.cpp
+	"Topping.h"
+
+1513355388 source:c:\users\isakm\downloads\pizzastore\repo\pizzarepo.cpp
+	"PizzaRepo.h"
+
+1513313540 source:c:\users\isakm\downloads\pizzastore\repo\toppingrepo.cpp
+	"ToppingRepo.h"
+
+1513313540 source:c:\users\isakm\downloads\pizzastore\services\adminservices.cpp
+	"AdminServices.h"
+
+1513354363 source:c:\users\isakm\downloads\pizzastore\services\bakerservices.cpp
+	"BakerServices.h"
+
+1513348541 source:c:\users\isakm\downloads\pizzastore\services\orderservices.cpp
+	"OrderServices.h"
+
+1513349586 source:c:\users\isakm\downloads\pizzastore\services\pizzaservice.cpp
+	"PizzaService.h"
+
+1513313540 source:c:\users\isakm\downloads\pizzastore\services\registerservices.cpp
+	"RegisterServices.h"
+
+1513349618 source:c:\users\isakm\downloads\pizzastore\ui\adminui.cpp
+	"AdminUI.h"
+	"AdminServices.h"
+
+1513313540 source:c:\users\isakm\downloads\pizzastore\ui\bakerui.cpp
+	"BakerUI.h"
+
+1513313540 source:c:\users\isakm\downloads\pizzastore\ui\mainui.cpp
+	"MainUI.h"
+
+1513313540 source:c:\users\isakm\downloads\pizzastore\ui\orderscreenui.cpp
+	"OrderScreenUI.h"
+
+1513313540 source:c:\users\isakm\downloads\pizzastore\ui\registerui.cpp
+	"RegisterUI.h"
+
+1513350944 source:c:\users\isakm\downloads\pizzastore\repo\orderrepo.cpp
+	"OrderRepo.h"
+
+1513313540 source:c:\users\filippus\desktop\pizzastore\main.cpp
+	<iostream>
+	<stdlib.h>
+	<MainUI.h>
+
+1513313540 c:\users\filippus\desktop\pizzastore\ui\mainui.h
+	"AdminUI.h"
+	"BakerUI.h"
+	"OrderScreenUI.h"
+	"RegisterUI.h"
+	<stdlib.h>
+	<iostream>
+
+1513313540 c:\users\filippus\desktop\pizzastore\ui\adminui.h
+	<stdlib.h>
+	"AdminServices.h"
+	"MainUI.h"
+	"PizzaService.h"
+
+1513313540 c:\users\filippus\desktop\pizzastore\services\adminservices.h
+	<fstream>
+	"Topping.h"
+	"Toppingrepo.h"
+	<vector>
+	<iostream>
+
+1513313540 c:\users\filippus\desktop\pizzastore\model\topping.h
+	<iostream>
+	<fstream>
+	<string.h>
+
+1513313540 c:\users\filippus\desktop\pizzastore\repo\toppingrepo.h
+	"Topping.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+
+1513313540 c:\users\filippus\desktop\pizzastore\services\pizzaservice.h
+	<iostream>
+	<string>
+	<fstream>
+	<vector>
+	<stdlib.h>
+	"PizzaService.h"
+	"Pizza.h"
+	"PizzaRepo.h"
+	"ToppingRepo.h"
+
+1513349566 c:\users\filippus\desktop\pizzastore\model\pizza.h
+	<iostream>
+	<fstream>
+	<stddef.h>
+	<vector>
+	"Topping.h"
+
+1513352006 c:\users\filippus\desktop\pizzastore\repo\pizzarepo.h
+	<fstream>
+	<iostream>
+	<vector>
+	"Pizza.h"
+
+1513355690 c:\users\filippus\desktop\pizzastore\ui\bakerui.h
+	"MainUI.h"
+	"Order.h"
+	"BakerServices.h"
+	<stdlib.h>
+
+1513348666 c:\users\filippus\desktop\pizzastore\model\order.h
+	<vector>
+	<string>
+	<iostream>
+	<string.h>
+	"Pizza.h"
+
+1513313540 c:\users\filippus\desktop\pizzastore\services\bakerservices.h
+	"Order.h"
+	"OrderRepo.h"
+	"PizzaRepo.h"
+	"PizzaService.h"
+	"Pizza.h"
+	"stdlib.h"
+	<fstream>
+	<vector>
+	<iostream>
+
+1513313540 c:\users\filippus\desktop\pizzastore\repo\orderrepo.h
+	<fstream>
+	<iostream>
+	<vector>
+	"Order.h"
+	"Pizza.h"
+
+1513313540 c:\users\filippus\desktop\pizzastore\ui\orderscreenui.h
+	"MainUI.h"
+	"OrderServices.h"
+	"PizzaService.h"
+	"iostream"
+	"stdlib.h"
+
+1513313540 c:\users\filippus\desktop\pizzastore\services\orderservices.h
+	<iostream>
+	<vector>
+	<iostream>
+	<stdlib.h>
+	"ToppingRepo.h"
+	"PizzaRepo.h"
+	"OrderRepo.h"
+	"Order.h"
+	"Topping.h"
+	"ToppingRepo.h"
+	"PizzaService.h"
+	<vector>
+	<iostream>
+
+1513313540 c:\users\filippus\desktop\pizzastore\ui\registerui.h
+	<stdlib.h>
+	"OrderServices.h"
+	"RegisterServices.h"
+	"iostream"
+	"stdlib.h"
+	"MainUI.h"
+
+1513313540 c:\users\filippus\desktop\pizzastore\services\registerservices.h
+	"OrderRepo.h"
+	"Order.h"
+	<stdlib.h>
+	<string>
+	<iostream>
+	<Vector>
+
+1513348688 source:c:\users\filippus\desktop\pizzastore\model\order.cpp
+	"Order.h"
+	"Order.h"
+
+1513349686 source:c:\users\filippus\desktop\pizzastore\model\pizza.cpp
+	"Pizza.h"
+
+1513313540 source:c:\users\filippus\desktop\pizzastore\model\topping.cpp
+	"Topping.h"
+
+1513350946 source:c:\users\filippus\desktop\pizzastore\repo\orderrepo.cpp
+	"OrderRepo.h"
+
+1513355390 source:c:\users\filippus\desktop\pizzastore\repo\pizzarepo.cpp
+	"PizzaRepo.h"
+
+1513313540 source:c:\users\filippus\desktop\pizzastore\repo\toppingrepo.cpp
+	"ToppingRepo.h"
+
+1513313540 source:c:\users\filippus\desktop\pizzastore\services\adminservices.cpp
+	"AdminServices.h"
+
+1513354364 source:c:\users\filippus\desktop\pizzastore\services\bakerservices.cpp
+	"BakerServices.h"
+
+1513348542 source:c:\users\filippus\desktop\pizzastore\services\orderservices.cpp
+	"OrderServices.h"
+
+1513349588 source:c:\users\filippus\desktop\pizzastore\services\pizzaservice.cpp
+	"PizzaService.h"
+
+1513313540 source:c:\users\filippus\desktop\pizzastore\services\registerservices.cpp
+	"RegisterServices.h"
+
+1513349620 source:c:\users\filippus\desktop\pizzastore\ui\adminui.cpp
+	"AdminUI.h"
+	"AdminServices.h"
+
+1513355800 source:c:\users\filippus\desktop\pizzastore\ui\bakerui.cpp
+	"BakerUI.h"
+
+1513313540 source:c:\users\filippus\desktop\pizzastore\ui\mainui.cpp
+	"MainUI.h"
+
+1513313540 source:c:\users\filippus\desktop\pizzastore\ui\orderscreenui.cpp
+	"OrderScreenUI.h"
+
+1513313540 source:c:\users\filippus\desktop\pizzastore\ui\registerui.cpp
+	"RegisterUI.h"
 

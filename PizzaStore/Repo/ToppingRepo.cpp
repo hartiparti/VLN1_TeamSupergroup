@@ -5,7 +5,8 @@ ToppingRepo::ToppingRepo()
 
 }
 
-/// Function for storing all custom made toppings, in the Data Access layer.
+
+///Föll sem við erum að nota.
 void ToppingRepo::storeAllToppings(vector<Topping> &toppings)
 {
     ofstream fout;
@@ -17,7 +18,7 @@ void ToppingRepo::storeAllToppings(vector<Topping> &toppings)
     }
     fout.close();
 }
-/// Function to retrieve all toppings.
+
 vector<Topping> ToppingRepo::retriveAllToppings()
 {
     vector<Topping> toppings;

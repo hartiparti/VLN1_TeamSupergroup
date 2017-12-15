@@ -5,7 +5,7 @@ RegisterServices::RegisterServices()
     //ctor
 }
 
-/// Primarily to look for a certain order via phone numbers,
+
 vector <Order> RegisterServices::findNewOrder(string input)
 {
     vector <Order> ListofNewOrders = orderRepo.getlistOfNewOrders();
@@ -21,7 +21,7 @@ vector <Order> RegisterServices::findNewOrder(string input)
     }
         return FindCustomersOrder;
 }
-/// Call up orders from the Data layer.
+
 void RegisterServices::getNewOrder()
 {
     string input = " ";

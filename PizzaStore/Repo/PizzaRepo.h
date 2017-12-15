@@ -24,6 +24,8 @@ class PizzaRepo
         void addPizzasTofile(Pizza pizza);
         vector<Pizza> retriveAllPizzasfromfile();
 
+        void updateStatusOfNextPizza();
+
     private:
 };
 

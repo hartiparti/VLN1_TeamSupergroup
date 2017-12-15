@@ -4,7 +4,7 @@ PizzaRepo::PizzaRepo()
 {
 
 }
-/// Add Pizzas to "PizzaForOrder"
+
 void PizzaRepo::addPizzasToNewOrder(Pizza pizza)
 {
     ofstream fout;
@@ -14,7 +14,7 @@ void PizzaRepo::addPizzasToNewOrder(Pizza pizza)
 
     fout.close();
 }
-/// Retrieve pizzas from orders only
+
 vector <Pizza> PizzaRepo::retrivePizzaForOrder(){
 
     vector<Pizza> PizzaForOrder;
@@ -33,7 +33,6 @@ vector <Pizza> PizzaRepo::retrivePizzaForOrder(){
     return PizzaForOrder;
 }
 
-/// For adding pizzas to file.
 void PizzaRepo::addPizzasTofile(Pizza pizza)
 {
     ofstream fout;
@@ -43,30 +42,75 @@ void PizzaRepo::addPizzasTofile(Pizza pizza)
 
     fout.close();
 }
-/// Retrieve all pizzas from repo.
+
 vector<Pizza>PizzaRepo::retriveAllPizzasfromfile()
 {
-   vector <Pizza> vector_of_pizzas;
+    vector <Pizza> vector_of_pizzas;
 
     ifstream fin;
     fin.open("pizzas.txt");
+
     if(fin.is_open())
     {
-
         Pizza p;
         while(fin >> p)
         {
             vector_of_pizzas.push_back(p);
-
         }
     }
     else
     {
-        cout << "File could not open";
+        cout << "Error";
     }
 
     fin.close();
+
     return vector_of_pizzas;
+}
+
+void PizzaRepo::updateStatusOfNextPizza()
+{
+    vector <Pizza> vector_of_pizzas;
+    Pizza PizzaToUpdate;
+    int indexOfPizzaInFile = 0;
+    bool flag = true;
+
+    ifstream fin;
+    fin.open("pizzas.txt");
+
+    if(fin.is_open())
+    {
+        Pizza p;
+        while(fin >> p)
+        {
+            if(PizzaToUpdate.getStatus() == 0 && flag)
+                flag = false;
+
+            if(flag)
+                indexOfPizzaInFile++;
+
+            vector_of_pizzas.push_back(p);
+        }
+    }
+
+    fin.close();
+
+    PizzaToUpdate.setStatus(1);
+
+    ofstream fout;
+    fout.open("pizzas.txt");
+
+    if(fout.is_open())
+    {
+        for(unsigned int i = 0; i < vector_of_pizzas.size(); i++){
+            if(i == indexOfPizzaInFile)
+                fout << PizzaToUpdate;
+            else
+                fout << vector_of_pizzas.at(i);
+        }
+    }
+
+    fout.close();
 }
 
 void PizzaRepo::storePizzaToMenu(Pizza pizza)

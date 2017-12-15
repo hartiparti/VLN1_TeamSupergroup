@@ -34,7 +34,7 @@ void MainUI::printHeader()
 
     cout << "               *******************************************************" << endl;
     cout << "               *                                                     *" << endl;
-    cout << "               *             |A w e S o m e P i Z z A|               *" << endl;
+    cout << "               *             |A w e s o m e P i z z a|               *" << endl;
     cout << "               *           -----------------------------             *" << endl;
     cout << "               *                                                     *" << endl;
     cout << "               *******************************************************" << endl;

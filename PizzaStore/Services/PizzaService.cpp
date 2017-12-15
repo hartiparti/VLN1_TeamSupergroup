@@ -6,7 +6,7 @@ PizzaService::PizzaService()
 }
 
 
-/// Primary function to make Pizza, stores the information in the Data Access layer.
+
 vector <Pizza> PizzaService::makePizza()
 {
     vector <Pizza> NewPizza;
@@ -63,7 +63,7 @@ vector <Pizza> PizzaService::makePizza()
         return NewPizza;;
 }
 
-/// Gateway to add Pizzas to menu.
+
 void PizzaService::addPizzaToMenu(Pizza pizza)
 {
     PizzaRepo pizzaRepo;
@@ -72,20 +72,20 @@ void PizzaService::addPizzaToMenu(Pizza pizza)
         pizzaRepo.storePizzaToMenu(pizza);
     }
 }
-/// Retrieve only menu pizzas.
+
 vector<Pizza> PizzaService::getPizzasFromMenu(){
     PizzaRepo pizzaRepo;
     return pizzaRepo.retivePizzaFromMenu();
 }
 
-/// Retrieve only menu pizzas.
+
 vector <Pizza> PizzaService::retrivePizzaForOrder()
 {
     PizzaRepo pizzaRepo;
     return pizzaRepo.retrivePizzaForOrder();
 
 }
-/// Should be more function for validating a pizza.
+// TODO
 bool PizzaService::isValid(Pizza pizza){
     return true;
 }

@@ -20,6 +20,7 @@ class BakerUI
 
     private:
         BakerServices bakerservices;
+        PizzaRepo pizzaRepo;
 };
 
 #endif // BAKERUI_H
